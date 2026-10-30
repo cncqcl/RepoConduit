@@ -1,0 +1,4 @@
+interface:
+  display_name: "RepoConduit Collaboration"
+  short_description: "Repository consultation, handoff, and bundle review"
+  default_prompt: "Use $consult-external-agent to start or continue RepoConduit collaboration in the explicitly selected workspace."

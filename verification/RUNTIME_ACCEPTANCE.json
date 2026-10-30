@@ -1,0 +1,385 @@
+{
+  "schema_version": "0.2",
+  "kind": "product_runtime_acceptance_not_handoff_verification",
+  "target_release_scope": "full_design",
+  "status": "blocked",
+  "generated_by": "public_source_template_not_execution_evidence",
+  "source_commit": null,
+  "build_id": null,
+  "release_artifact": null,
+  "platform": null,
+  "account_ref": null,
+  "capabilities_verified": false,
+  "effective_collection_route": null,
+  "stages": {
+    "core_verified": {
+      "status": "blocked",
+      "evidence_refs": []
+    },
+    "flagship_live_verified": {
+      "status": "blocked",
+      "evidence_refs": []
+    },
+    "release_ready": {
+      "status": "blocked",
+      "evidence_refs": []
+    }
+  },
+  "acceptance_cases": [
+    {
+      "id": "AC01",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "mock_e2e": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "live": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC02",
+      "layers": {
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "mock_e2e": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "live_human": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC03",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "mock_e2e": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "live": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC04",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "faults": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "live": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC05",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "faults": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "live": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC06",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "security": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC07",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "faults": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "live": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC08",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "security": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "faults": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC09",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "security": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "live_runtime": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC10",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "faults": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "live_runtime": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC11",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "boundary": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "real_second_runtime": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC12",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "security": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "live": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC13",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "mock_e2e": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "live": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    },
+    {
+      "id": "AC14",
+      "layers": {
+        "contracts": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "integration": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "faults": {
+          "status": "not_run",
+          "evidence_refs": []
+        },
+        "package_smoke": {
+          "status": "not_run",
+          "evidence_refs": []
+        }
+      }
+    }
+  ],
+  "live_runs": [
+    {
+      "id": "LIVE01",
+      "status": "not_run",
+      "run_id": null,
+      "evidence_refs": []
+    },
+    {
+      "id": "LIVE02",
+      "status": "not_run",
+      "run_id": null,
+      "evidence_refs": []
+    },
+    {
+      "id": "LIVE03",
+      "status": "not_run",
+      "run_id": null,
+      "evidence_refs": []
+    },
+    {
+      "id": "NEUTRAL01",
+      "status": "not_run",
+      "run_id": null,
+      "evidence_refs": []
+    }
+  ],
+  "human_handoff": {
+    "status": "not_run",
+    "actual_human_performed": false,
+    "evidence_refs": []
+  },
+  "model_loading": {
+    "status": "not_run",
+    "evidence_record": null
+  },
+  "clean_package_smoke": {
+    "status": "not_run",
+    "evidence_refs": []
+  },
+  "blockers": [
+    {
+      "id": "public_template_no_unified_evidence",
+      "detail": "No release execution evidence is bundled in this public source template. Historical failures and UNKNOWN outcomes remain in private archives; see docs/release-evidence.md.",
+      "evidence_refs": []
+    }
+  ],
+  "scope_changes": [],
+  "warning": "Not an execution ledger. No historical pass is rebound to this source. Full release readiness remains blocked.",
+  "release_evidence": {
+    "offline_test_mode": "single_run",
+    "offline_commands": {
+      "typecheck": {
+        "status": "not_run",
+        "evidence_refs": []
+      },
+      "lint": {
+        "status": "not_run",
+        "evidence_refs": []
+      },
+      "test": {
+        "status": "not_run",
+        "evidence_refs": []
+      },
+      "build": {
+        "status": "not_run",
+        "evidence_refs": []
+      },
+      "package:smoke": {
+        "status": "not_run",
+        "evidence_refs": []
+      }
+    }
+  }
+}

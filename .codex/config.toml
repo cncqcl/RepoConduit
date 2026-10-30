@@ -1,0 +1,11 @@
+# Repo-Centric Agent Collaboration — development configuration v0.2.
+# Official schema checked 2026-09-26; local client/account loading still needs M00.
+# These are development-session defaults, NOT product investigator isolation.
+model = "gpt-6-astra"
+model_reasoning_effort = "medium"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[agents]
+max_threads = 3
+max_depth = 1

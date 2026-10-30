@@ -1,0 +1,3 @@
+{"id":1,"result":{"userAgent":"RepoConduit synthetic fixture","codexHome":"/home/investigator/.codex","platformFamily":"unix","platformOs":"linux"}}
+{"method":"configWarning","params":{"summary":"Synthetic unsupported option","details":null,"path":null,"range":null}}
+{"method":"remoteControl/status/changed","params":{"status":"disabled"}}

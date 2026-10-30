@@ -1,0 +1,10 @@
+{
+  "closureObserved": true,
+  "privateBinding": {
+    "homeMatched": true,
+    "codexHomeMatched": true,
+    "cwdMatched": true,
+    "commandMatched": true,
+    "authFileAbsent": true
+  }
+}

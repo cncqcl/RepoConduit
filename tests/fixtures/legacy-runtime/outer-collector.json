@@ -1,0 +1,143 @@
+{
+  "paths": {
+    "installRoot": "/home/fixture/.local/share/rcac-second-runtime-20260929",
+    "nodeRoot": "/home/fixture/.hermes/node",
+    "srtSettingsFile": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/host-original-srt.json",
+    "mcpConfigFile": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/host-original-mcp.json",
+    "helperFile": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/host-original-helper.py",
+    "privateAuthHome": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/auth",
+    "privateFifoDirectory": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003-1.mcp"
+  },
+  "profile": {
+    "allowedDomains": []
+  },
+  "descriptor": {
+    "attemptId": "attempt_00000000-0000-4000-8000-000000000003",
+    "workspaceId": "ws_00000000-0000-4000-8000-000000000003",
+    "distro": "Ubuntu-22.04",
+    "linuxUser": "fixture",
+    "uid": 1000,
+    "bootId": "00000000-0000-4000-8000-000000000004",
+    "unitName": "rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+    "launchWorkerEpoch": 1,
+    "sourceDigest": "270c0d536da1e328c882cda409fc95a131d86851b817f538836313cad3b9ed03",
+    "profileDigest": "23122cab18cb085dab72b43a7d2295fc82f52b796d8e7d835b07f0981504916b",
+    "commandDigest": "ef67bd76ad8acfc1387d364377e74f6358da3c5d689f0d046e399d7a21ecf87b"
+  },
+  "running": {
+    "kind": "claude_model_running",
+    "resource": {
+      "unitName": "rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+      "distro": "Ubuntu-22.04",
+      "uid": 1000,
+      "bootId": "00000000-0000-4000-8000-000000000004",
+      "invocationId": "00000000000000000000000000000002",
+      "controlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+      "gate": {
+        "protocol": "attempt_gate_v1",
+        "linuxUser": "fixture",
+        "root": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003",
+        "payloadKind": "claude_model_v1",
+        "launch": {
+          "workerEpoch": 1,
+          "sourceDigest": "270c0d536da1e328c882cda409fc95a131d86851b817f538836313cad3b9ed03",
+          "profileDigest": "23122cab18cb085dab72b43a7d2295fc82f52b796d8e7d835b07f0981504916b",
+          "commandDigest": "ef67bd76ad8acfc1387d364377e74f6358da3c5d689f0d046e399d7a21ecf87b",
+          "action": "claude_model_v1"
+        }
+      }
+    },
+    "journal": {
+      "protocol": "claude_model_v1",
+      "action": "claude_model_v1",
+      "attemptId": "attempt_00000000-0000-4000-8000-000000000003",
+      "workspaceId": "ws_00000000-0000-4000-8000-000000000003",
+      "bootId": "00000000-0000-4000-8000-000000000004",
+      "uid": 1000,
+      "unitName": "rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+      "launchWorkerEpoch": 1,
+      "sourceDigest": "270c0d536da1e328c882cda409fc95a131d86851b817f538836313cad3b9ed03",
+      "profileDigest": "23122cab18cb085dab72b43a7d2295fc82f52b796d8e7d835b07f0981504916b",
+      "commandDigest": "ef67bd76ad8acfc1387d364377e74f6358da3c5d689f0d046e399d7a21ecf87b",
+      "phase": "entered",
+      "closed": false,
+      "invocationId": "00000000000000000000000000000002",
+      "controlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+      "enterPid": 459,
+      "enterStartTicks": 679
+    },
+    "native": {
+      "bootId": "00000000-0000-4000-8000-000000000004",
+      "uid": 1000,
+      "unitName": "rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+      "invocationId": "00000000000000000000000000000002",
+      "controlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+      "loadState": "loaded",
+      "activeState": "active",
+      "subState": "running",
+      "mainPid": 459,
+      "startTicks": 679,
+      "procControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service"
+    }
+  },
+  "startup": {
+    "protocol": "claude_model_startup_v1",
+    "kind": "bootstrap_ready_candidate",
+    "journal": {
+      "protocol": "claude_model_v1",
+      "action": "claude_model_v1",
+      "attemptId": "attempt_00000000-0000-4000-8000-000000000003",
+      "workspaceId": "ws_00000000-0000-4000-8000-000000000003",
+      "bootId": "00000000-0000-4000-8000-000000000004",
+      "uid": 1000,
+      "unitName": "rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+      "launchWorkerEpoch": 1,
+      "sourceDigest": "270c0d536da1e328c882cda409fc95a131d86851b817f538836313cad3b9ed03",
+      "profileDigest": "23122cab18cb085dab72b43a7d2295fc82f52b796d8e7d835b07f0981504916b",
+      "commandDigest": "ef67bd76ad8acfc1387d364377e74f6358da3c5d689f0d046e399d7a21ecf87b",
+      "phase": "consumed",
+      "closed": false,
+      "invocationId": "00000000000000000000000000000002",
+      "controlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+      "enterPid": 459,
+      "enterStartTicks": 679
+    },
+    "bootstrapSha256": "64f7fd88cbeef270f5bc25d2c26774f22928a19a26a78d859a37d3fa6f84ba9f",
+    "bwrapInfo": {
+      "child-pid": 472,
+      "cgroup-namespace": 4026532293,
+      "ipc-namespace": 4026532291,
+      "mnt-namespace": 4026532289,
+      "pid-namespace": 4026532292,
+      "uts-namespace": 4026532290
+    },
+    "outerCandidate": {
+      "hostPid": 472,
+      "startTicks": 751,
+      "pidNamespace": "pid:[4026532292]",
+      "nspid": [
+        472,
+        1
+      ]
+    },
+    "bootstrapReady": {
+      "protocol": "claude_model_bootstrap_v1",
+      "kind": "ready",
+      "pid": 2,
+      "ppid": 1,
+      "startTicks": 751,
+      "namespaces": {
+        "pid": "pid:[4026532292]",
+        "mnt": "mnt:[4026532289]",
+        "net": "net:[4026531833]",
+        "user": "user:[4026532294]",
+        "ipc": "ipc:[4026532291]",
+        "uts": "uts:[4026532290]",
+        "cgroup": "cgroup:[4026532293]"
+      },
+      "capEff": "0",
+      "noNewPrivs": 1
+    }
+  },
+  "root": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003"
+}

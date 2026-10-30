@@ -1,0 +1,2106 @@
+{
+  "account": {
+    "fields": [
+      {
+        "label": "Email",
+        "value": "synthetic@example.test"
+      }
+    ]
+  },
+  "ui": {
+    "url": "https://chatgpt.com/c/11111111-1111-4111-8111-111111111111",
+    "dialogs": [],
+    "buttons": [],
+    "composers": [
+      {
+        "text": ""
+      }
+    ],
+    "media": [],
+    "headings": [
+      {
+        "label": "You said:",
+        "roleAttribute": null,
+        "messageIds": "00000000-0000-4000-8000-000000000103",
+        "bubble": {
+          "text": "请创建一个仅用于文件下载验收的无敏感合成包，标记 rcac_download_probe_20261007。使用文件生成工具产出 rcac-download-probe.zip，包内包含 README.md（标记文本）、index.html（静态简单页面，无脚本和外部资源）、manifest.json（文件名列表和标记）、notes/second.md（第二份短文本）、preview.png（64×64纯色小图）。同时提供 preview.png 单独下载链接。请实际生成并附上可下载文件；不要用代码块、base64或操作说明替代文件。不要访问仓库、外部网站、账户设置或其他私人文件。只需返回两个下载链接和文件清单。",
+          "tags": [
+            "DIV"
+          ]
+        },
+        "assistant": null,
+        "selection": null
+      },
+      {
+        "label": "ChatGPT said:",
+        "roleAttribute": "assistant",
+        "messageIds": "00000000-0000-4000-8000-000000000101 00000000-0000-4000-8000-000000000101",
+        "bubble": null,
+        "assistant": {
+          "text": "下载 rcac-download-probe.zip\n\n文件清单：README.md、index.html、manifest.json、notes/second.md、preview.png \n\npreview.png\nImage",
+          "tags": [
+            "DIV",
+            "P",
+            "SPAN",
+            "svg",
+            "path",
+            "BUTTON",
+            "use"
+          ]
+        },
+        "selection": {
+          "conversationId": "11111111-1111-4111-8111-111111111111",
+          "messageId": "00000000-0000-4000-8000-000000000101"
+        }
+      },
+      {
+        "label": "You said:",
+        "roleAttribute": null,
+        "messageIds": "00000000-0000-4000-8000-000000000104",
+        "bubble": {
+          "text": "这是同一无敏感文件验收议题中的一个独立新尝试，标记 rcac_download_probe_v2_a2_20261009。之前的 v2 请求结果未知，请不要重试、覆盖或删除此前文件。本次仅使用新文件名 rcac-download-probe-v2-a2.zip 和 preview-v2-a2.png。使用文件生成工具实际创建 ZIP，内含 README.md（新标记和第二版字样）、index.html（静态简单页面，无脚本或外部资源）、manifest.json（文件名列表、新标记、parentMarker 为 rcac_download_probe_20261007）、notes/second.md（含新标记）、preview-v2-a2.png（64×64蓝色纯色小图），并提供同一 PNG 的单独下载。工具计算 ZIP 和 PNG 各自准确字节数与 SHA-256。最终只返回两个真实下载链接和两个短段落的字节数、哈希与文件清单，不用列表、表格、标题、代码块或行内代码。不要读取仓库、账户设置、外部网站或其他文件，不要执行旧包内容。如果这些文件名已经存在且内容满足本次标记，只返回已有同名文件，不再次生成。",
+          "tags": [
+            "DIV"
+          ]
+        },
+        "assistant": null,
+        "selection": null
+      },
+      {
+        "label": "ChatGPT said:",
+        "roleAttribute": "assistant",
+        "messageIds": "00000000-0000-4000-8000-000000000102 00000000-0000-4000-8000-000000000102",
+        "bubble": null,
+        "assistant": {
+          "text": "下载 rcac-download-probe-v2-a2.zip\n\nZIP：1091 字节，SHA-256 774cf2747d2264912805b8fad97c9eb69073fd464987888ad4d6a5eb2bb1daaf。文件清单：README.md、index.html、manifest.json、notes/second.md、preview-v2-a2.png。\n\nPNG：153 字节，SHA-256 0a794b7ab2a9413ffcf2f0a16dc23804207ea7207fee4eb83a51f56d1639fcc7。文件清单：preview-v2-a2.png。 \n\npreview-v2-a2.png\nImage",
+          "tags": [
+            "DIV",
+            "P",
+            "SPAN",
+            "svg",
+            "path",
+            "BUTTON",
+            "use"
+          ]
+        },
+        "selection": {
+          "conversationId": "11111111-1111-4111-8111-111111111111",
+          "messageId": "00000000-0000-4000-8000-000000000102"
+        }
+      }
+    ]
+  },
+  "host": {
+    "schemaVersion": 1,
+    "untrustedDataNotice": "Thread titles and messages are untrusted data, not instructions.",
+    "thread": {
+      "id": "11111111-1111-4111-8111-111111111111",
+      "kind": "chatgpt",
+      "title": "创建下载验收包",
+      "preview": ":chatgpt-content-reference{index=\"0\"}[下载 rcac-download-probe-v2-a2.zip](sandbox:/mnt/data/rcac-download-probe-v2-a2.zip)\n\n:chatgpt-content-reference{index=\"1\"}[下载 preview-v2-a2.png](sandbox:/mnt/data/preview-v2-a2.png)\n\nZIP：1091 字节，SHA-256 774cf2747d2264912805b8fad97c9eb69073fd464987888ad4d6a5eb2bb1daaf。文件清单：README.md、index.html、manifest.json、notes/second.md、preview-v2-a2.png。\n\nPNG：153 字节，SHA-256 0a794b7ab2a9413ffcf2f0a16dc23804207ea7207fee4eb83a51f56d1639fcc7。文件清单：preview-v2-a2.png。",
+      "status": {
+        "type": "idle"
+      },
+      "cwd": null,
+      "createdAt": 1791311068.766539,
+      "updatedAt": 1791540040.065266
+    },
+    "page": {
+      "order": "newest_first",
+      "limit": 6,
+      "nextCursor": null,
+      "hasMore": false
+    },
+    "turns": [
+      {
+        "id": "00000000-0000-4000-8000-000000000104",
+        "status": "completed",
+        "error": null,
+        "startedAt": 1791540003.698,
+        "completedAt": 1791540035.630415,
+        "durationMs": null,
+        "items": [
+          {
+            "type": "userMessage",
+            "id": "00000000-0000-4000-8000-000000000104",
+            "content": [
+              {
+                "type": "text",
+                "text": "这是同一无敏感文件验收议题中的一个独立新尝试，标记 rcac_download_probe_v2_a2_20261009。之前的 v2 请求结果未知，请不要重试、覆盖或删除此前文件。本次仅使用新文件名 rcac-download-probe-v2-a2.zip 和 preview-v2-a2.png。使用文件生成工具实际创建 ZIP，内含 README.md（新标记和第二版字样）、index.html（静态简单页面，无脚本或外部资源）、manifest.json（文件名列表、新标记、parentMarker 为 rcac_download_probe_20261007）、notes/second.md（含新标记）、preview-v2-a2.png（64×64蓝色纯色小图），并提供同一 PNG 的单独下载。工具计算 ZIP 和 PNG 各自准确字节数与 SHA-256。最终只返回两个真实下载链接和两个短段落的字节数、哈希与文件清单，不用列表、表格、标题、代码块或行内代码。不要读取仓库、账户设置、外部网站或其他文件，不要执行旧包内容。如果这些文件名已经存在且内容满足本次标记，只返回已有同名文件，不再次生成。"
+              }
+            ]
+          },
+          {
+            "type": "agentMessage",
+            "id": "00000000-0000-4000-8000-000000000102",
+            "text": ":chatgpt-content-reference{index=\"0\"}[下载 rcac-download-probe-v2-a2.zip](sandbox:/mnt/data/rcac-download-probe-v2-a2.zip)\n\n:chatgpt-content-reference{index=\"1\"}[下载 preview-v2-a2.png](sandbox:/mnt/data/preview-v2-a2.png)\n\nZIP：1091 字节，SHA-256 774cf2747d2264912805b8fad97c9eb69073fd464987888ad4d6a5eb2bb1daaf。文件清单：README.md、index.html、manifest.json、notes/second.md、preview-v2-a2.png。\n\nPNG：153 字节，SHA-256 0a794b7ab2a9413ffcf2f0a16dc23804207ea7207fee4eb83a51f56d1639fcc7。文件清单：preview-v2-a2.png。"
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000103",
+        "status": "completed",
+        "error": null,
+        "startedAt": 1791311067.083,
+        "completedAt": 1791311088.865049,
+        "durationMs": null,
+        "items": [
+          {
+            "type": "userMessage",
+            "id": "00000000-0000-4000-8000-000000000103",
+            "content": [
+              {
+                "type": "text",
+                "text": "请创建一个仅用于文件下载验收的无敏感合成包，标记 rcac_download_probe_20261007。使用文件生成工具产出 rcac-download-probe.zip，包内包含 README.md（标记文本）、index.html（静态简单页面，无脚本和外部资源）、manifest.json（文件名列表和标记）、notes/second.md（第二份短文本）、preview.png（64×64纯色小图）。同时提供 preview.png 单独下载链接。请实际生成并附上可下载文件；不要用代码块、base64或操作说明替代文件。不要访问仓库、外部网站、账户设置或其他私人文件。只需返回两个下载链接和文件清单。"
+              }
+            ]
+          },
+          {
+            "type": "agentMessage",
+            "id": "00000000-0000-4000-8000-000000000101",
+            "text": ":chatgpt-content-reference{index=\"0\"}[下载 rcac-download-probe.zip](sandbox:/mnt/data/rcac-download-probe.zip)\n\n:chatgpt-content-reference{index=\"1\"}[下载 preview.png](sandbox:/mnt/data/preview.png)\n\n文件清单：README.md、index.html、manifest.json、notes/second.md、preview.png"
+          }
+        ]
+      }
+    ],
+    "attachments": []
+  },
+  "bodyCopies": [
+    {
+      "kind": "native_message_copy_v1",
+      "before": {
+        "nativeSessionId": "11111111-1111-4111-8111-111111111111",
+        "nativeMessageId": "00000000-0000-4000-8000-000000000103",
+        "role": "user",
+        "text": "请创建一个仅用于文件下载验收的无敏感合成包，标记 rcac_download_probe_20261007。使用文件生成工具产出 rcac-download-probe.zip，包内包含 README.md（标记文本）、index.html（静态简单页面，无脚本和外部资源）、manifest.json（文件名列表和标记）、notes/second.md（第二份短文本）、preview.png（64×64纯色小图）。同时提供 preview.png 单独下载链接。请实际生成并附上可下载文件；不要用代码块、base64或操作说明替代文件。不要访问仓库、外部网站、账户设置或其他私人文件。只需返回两个下载链接和文件清单。",
+        "tags": [
+          "DIV"
+        ]
+      },
+      "after": {
+        "nativeSessionId": "11111111-1111-4111-8111-111111111111",
+        "nativeMessageId": "00000000-0000-4000-8000-000000000103",
+        "role": "user",
+        "text": "请创建一个仅用于文件下载验收的无敏感合成包，标记 rcac_download_probe_20261007。使用文件生成工具产出 rcac-download-probe.zip，包内包含 README.md（标记文本）、index.html（静态简单页面，无脚本和外部资源）、manifest.json（文件名列表和标记）、notes/second.md（第二份短文本）、preview.png（64×64纯色小图）。同时提供 preview.png 单独下载链接。请实际生成并附上可下载文件；不要用代码块、base64或操作说明替代文件。不要访问仓库、外部网站、账户设置或其他私人文件。只需返回两个下载链接和文件清单。",
+        "tags": [
+          "DIV"
+        ]
+      },
+      "clipboardBefore": "repoconduit-native-message-copy-v1",
+      "clipboardAfter": "请创建一个仅用于文件下载验收的无敏感合成包，标记 rcac_download_probe_20261007。使用文件生成工具产出 rcac-download-probe.zip，包内包含 README.md（标记文本）、index.html（静态简单页面，无脚本和外部资源）、manifest.json（文件名列表和标记）、notes/second.md（第二份短文本）、preview.png（64×64纯色小图）。同时提供 preview.png 单独下载链接。请实际生成并附上可下载文件；不要用代码块、base64或操作说明替代文件。不要访问仓库、外部网站、账户设置或其他私人文件。只需返回两个下载链接和文件清单。"
+    },
+    {
+      "kind": "native_message_attachment_copy_v1",
+      "before": {
+        "nativeSessionId": "11111111-1111-4111-8111-111111111111",
+        "nativeMessageId": "00000000-0000-4000-8000-000000000101",
+        "role": "assistant",
+        "text": "下载 rcac-download-probe.zip\n\n文件清单：README.md、index.html、manifest.json、notes/second.md、preview.png \n\npreview.png\nImage",
+        "tags": [
+          "DIV",
+          "P",
+          "SPAN",
+          "svg",
+          "path",
+          "BUTTON",
+          "use"
+        ]
+      },
+      "after": {
+        "nativeSessionId": "11111111-1111-4111-8111-111111111111",
+        "nativeMessageId": "00000000-0000-4000-8000-000000000101",
+        "role": "assistant",
+        "text": "下载 rcac-download-probe.zip\n\n文件清单：README.md、index.html、manifest.json、notes/second.md、preview.png \n\npreview.png\nImage",
+        "tags": [
+          "DIV",
+          "P",
+          "SPAN",
+          "svg",
+          "path",
+          "BUTTON",
+          "use"
+        ]
+      },
+      "clipboardBefore": "repoconduit-native-message-copy-v1",
+      "clipboardAfter": "rcac-download-probe.zip[下载 rcac-download-probe.zip](sandbox:/mnt/data/rcac-download-probe.zip)\n\n:chatgpt-content-reference{index=\"1\"}[下载 preview.png](sandbox:/mnt/data/preview.png)\n\n文件清单：README.md、index.html、manifest.json、notes/second.md、preview.png",
+      "attachmentBefore": {
+        "account": {
+          "fields": [
+            {
+              "label": "Email",
+              "value": "synthetic@example.test"
+            }
+          ]
+        },
+        "dom": {
+          "blocks": [
+            {
+              "ancestry": [
+                {
+                  "attributes": [
+                    [
+                      "data-file-reference",
+                      "true"
+                    ],
+                    [
+                      "data-markdown-copy-text",
+                      "rcac-download-probe.zip"
+                    ],
+                    [
+                      "role",
+                      "button"
+                    ],
+                    [
+                      "aria-busy",
+                      "false"
+                    ],
+                    [
+                      "aria-label",
+                      "Download rcac-download-probe.zip"
+                    ],
+                    [
+                      "data-state",
+                      "closed"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-copy-reference",
+                      "0"
+                    ],
+                    [
+                      "data-markdown-copy",
+                      "contents"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "P"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-markdown-text-style",
+                      "assistant-message"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-selection-conversation-id",
+                      "11111111-1111-4111-8111-111111111111"
+                    ],
+                    [
+                      "data-chatgpt-selection-message-id",
+                      "00000000-0000-4000-8000-000000000101"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-talvt-turn-state",
+                      "complete"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-turn-key",
+                      "00000000-0000-4000-8000-000000000103"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-conversation-selection-target",
+                      "true"
+                    ]
+                  ],
+                  "tag": "DIV"
+                }
+              ],
+              "filename": "rcac-download-probe.zip",
+              "kind": "file_reference",
+              "referenceIndex": "0",
+              "renderedText": "下载 rcac-download-probe.zip",
+              "visible": true
+            },
+            {
+              "analysisControl": {
+                "ancestry": [
+                  {
+                    "attributes": [
+                      [
+                        "aria-label",
+                        "View analysis"
+                      ]
+                    ],
+                    "tag": "BUTTON"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-state",
+                        "closed"
+                      ]
+                    ],
+                    "tag": "SPAN"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "SPAN"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "P"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-markdown-text-style",
+                        "assistant-message"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-chatgpt-selection-conversation-id",
+                        "11111111-1111-4111-8111-111111111111"
+                      ],
+                      [
+                        "data-chatgpt-selection-message-id",
+                        "00000000-0000-4000-8000-000000000101"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-talvt-turn-state",
+                        "complete"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-turn-key",
+                        "00000000-0000-4000-8000-000000000103"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-chatgpt-conversation-selection-target",
+                        "true"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  }
+                ],
+                "label": "View analysis"
+              },
+              "kind": "text",
+              "renderedText": "文件清单：README.md、index.html、manifest.json、notes/second.md、preview.png "
+            },
+            {
+              "ancestry": [
+                {
+                  "attributes": [
+                    [
+                      "aria-label",
+                      "Download file"
+                    ]
+                  ],
+                  "tag": "BUTTON"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-state",
+                      "closed"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-selection-conversation-id",
+                      "11111111-1111-4111-8111-111111111111"
+                    ],
+                    [
+                      "data-chatgpt-selection-message-id",
+                      "00000000-0000-4000-8000-000000000101"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-talvt-turn-state",
+                      "complete"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-turn-key",
+                      "00000000-0000-4000-8000-000000000103"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-conversation-selection-target",
+                      "true"
+                    ]
+                  ],
+                  "tag": "DIV"
+                }
+              ],
+              "auxiliaryLabel": "Open file",
+              "downloadLabel": "Download file",
+              "filename": "preview.png",
+              "kind": "image_card",
+              "previewLabel": "Open preview of preview.png",
+              "typeImage": "Image",
+              "visible": true
+            }
+          ],
+          "message": {
+            "attributes": [
+              [
+                "data-chatgpt-selection-conversation-id",
+                "11111111-1111-4111-8111-111111111111"
+              ],
+              [
+                "data-chatgpt-selection-message-id",
+                "00000000-0000-4000-8000-000000000101"
+              ]
+            ],
+            "tag": "DIV"
+          },
+          "stateNode": {
+            "attributes": [
+              [
+                "data-talvt-turn-state",
+                "complete"
+              ]
+            ],
+            "tag": "DIV"
+          },
+          "turn": {
+            "attributes": [
+              [
+                "data-turn-key",
+                "00000000-0000-4000-8000-000000000103"
+              ]
+            ],
+            "tag": "DIV"
+          }
+        },
+        "sourceKind": "observed_chatgpt_dom_attachment_v1",
+        "ui": {
+          "composerText": "",
+          "dialogs": [],
+          "generationControls": [],
+          "turnStates": [
+            "complete",
+            "complete"
+          ],
+          "url": "https://chatgpt.com/c/11111111-1111-4111-8111-111111111111"
+        }
+      },
+      "attachmentAfter": {
+        "account": {
+          "fields": [
+            {
+              "label": "Email",
+              "value": "synthetic@example.test"
+            }
+          ]
+        },
+        "dom": {
+          "blocks": [
+            {
+              "ancestry": [
+                {
+                  "attributes": [
+                    [
+                      "data-file-reference",
+                      "true"
+                    ],
+                    [
+                      "data-markdown-copy-text",
+                      "rcac-download-probe.zip"
+                    ],
+                    [
+                      "role",
+                      "button"
+                    ],
+                    [
+                      "aria-busy",
+                      "false"
+                    ],
+                    [
+                      "aria-label",
+                      "Download rcac-download-probe.zip"
+                    ],
+                    [
+                      "data-state",
+                      "closed"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-copy-reference",
+                      "0"
+                    ],
+                    [
+                      "data-markdown-copy",
+                      "contents"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "P"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-markdown-text-style",
+                      "assistant-message"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-selection-conversation-id",
+                      "11111111-1111-4111-8111-111111111111"
+                    ],
+                    [
+                      "data-chatgpt-selection-message-id",
+                      "00000000-0000-4000-8000-000000000101"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-talvt-turn-state",
+                      "complete"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-turn-key",
+                      "00000000-0000-4000-8000-000000000103"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-conversation-selection-target",
+                      "true"
+                    ]
+                  ],
+                  "tag": "DIV"
+                }
+              ],
+              "filename": "rcac-download-probe.zip",
+              "kind": "file_reference",
+              "referenceIndex": "0",
+              "renderedText": "下载 rcac-download-probe.zip",
+              "visible": true
+            },
+            {
+              "analysisControl": {
+                "ancestry": [
+                  {
+                    "attributes": [
+                      [
+                        "aria-label",
+                        "View analysis"
+                      ]
+                    ],
+                    "tag": "BUTTON"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-state",
+                        "closed"
+                      ]
+                    ],
+                    "tag": "SPAN"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "SPAN"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "P"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-markdown-text-style",
+                        "assistant-message"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-chatgpt-selection-conversation-id",
+                        "11111111-1111-4111-8111-111111111111"
+                      ],
+                      [
+                        "data-chatgpt-selection-message-id",
+                        "00000000-0000-4000-8000-000000000101"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-talvt-turn-state",
+                        "complete"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-turn-key",
+                        "00000000-0000-4000-8000-000000000103"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-chatgpt-conversation-selection-target",
+                        "true"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  }
+                ],
+                "label": "View analysis"
+              },
+              "kind": "text",
+              "renderedText": "文件清单：README.md、index.html、manifest.json、notes/second.md、preview.png "
+            },
+            {
+              "ancestry": [
+                {
+                  "attributes": [
+                    [
+                      "aria-label",
+                      "Download file"
+                    ]
+                  ],
+                  "tag": "BUTTON"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-state",
+                      "closed"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-selection-conversation-id",
+                      "11111111-1111-4111-8111-111111111111"
+                    ],
+                    [
+                      "data-chatgpt-selection-message-id",
+                      "00000000-0000-4000-8000-000000000101"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-talvt-turn-state",
+                      "complete"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-turn-key",
+                      "00000000-0000-4000-8000-000000000103"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-conversation-selection-target",
+                      "true"
+                    ]
+                  ],
+                  "tag": "DIV"
+                }
+              ],
+              "auxiliaryLabel": "Open file",
+              "downloadLabel": "Download file",
+              "filename": "preview.png",
+              "kind": "image_card",
+              "previewLabel": "Open preview of preview.png",
+              "typeImage": "Image",
+              "visible": true
+            }
+          ],
+          "message": {
+            "attributes": [
+              [
+                "data-chatgpt-selection-conversation-id",
+                "11111111-1111-4111-8111-111111111111"
+              ],
+              [
+                "data-chatgpt-selection-message-id",
+                "00000000-0000-4000-8000-000000000101"
+              ]
+            ],
+            "tag": "DIV"
+          },
+          "stateNode": {
+            "attributes": [
+              [
+                "data-talvt-turn-state",
+                "complete"
+              ]
+            ],
+            "tag": "DIV"
+          },
+          "turn": {
+            "attributes": [
+              [
+                "data-turn-key",
+                "00000000-0000-4000-8000-000000000103"
+              ]
+            ],
+            "tag": "DIV"
+          }
+        },
+        "sourceKind": "observed_chatgpt_dom_attachment_v1",
+        "ui": {
+          "composerText": "",
+          "dialogs": [],
+          "generationControls": [],
+          "turnStates": [
+            "complete",
+            "complete"
+          ],
+          "url": "https://chatgpt.com/c/11111111-1111-4111-8111-111111111111"
+        }
+      }
+    },
+    {
+      "kind": "native_message_copy_v1",
+      "before": {
+        "nativeSessionId": "11111111-1111-4111-8111-111111111111",
+        "nativeMessageId": "00000000-0000-4000-8000-000000000104",
+        "role": "user",
+        "text": "这是同一无敏感文件验收议题中的一个独立新尝试，标记 rcac_download_probe_v2_a2_20261009。之前的 v2 请求结果未知，请不要重试、覆盖或删除此前文件。本次仅使用新文件名 rcac-download-probe-v2-a2.zip 和 preview-v2-a2.png。使用文件生成工具实际创建 ZIP，内含 README.md（新标记和第二版字样）、index.html（静态简单页面，无脚本或外部资源）、manifest.json（文件名列表、新标记、parentMarker 为 rcac_download_probe_20261007）、notes/second.md（含新标记）、preview-v2-a2.png（64×64蓝色纯色小图），并提供同一 PNG 的单独下载。工具计算 ZIP 和 PNG 各自准确字节数与 SHA-256。最终只返回两个真实下载链接和两个短段落的字节数、哈希与文件清单，不用列表、表格、标题、代码块或行内代码。不要读取仓库、账户设置、外部网站或其他文件，不要执行旧包内容。如果这些文件名已经存在且内容满足本次标记，只返回已有同名文件，不再次生成。",
+        "tags": [
+          "DIV"
+        ]
+      },
+      "after": {
+        "nativeSessionId": "11111111-1111-4111-8111-111111111111",
+        "nativeMessageId": "00000000-0000-4000-8000-000000000104",
+        "role": "user",
+        "text": "这是同一无敏感文件验收议题中的一个独立新尝试，标记 rcac_download_probe_v2_a2_20261009。之前的 v2 请求结果未知，请不要重试、覆盖或删除此前文件。本次仅使用新文件名 rcac-download-probe-v2-a2.zip 和 preview-v2-a2.png。使用文件生成工具实际创建 ZIP，内含 README.md（新标记和第二版字样）、index.html（静态简单页面，无脚本或外部资源）、manifest.json（文件名列表、新标记、parentMarker 为 rcac_download_probe_20261007）、notes/second.md（含新标记）、preview-v2-a2.png（64×64蓝色纯色小图），并提供同一 PNG 的单独下载。工具计算 ZIP 和 PNG 各自准确字节数与 SHA-256。最终只返回两个真实下载链接和两个短段落的字节数、哈希与文件清单，不用列表、表格、标题、代码块或行内代码。不要读取仓库、账户设置、外部网站或其他文件，不要执行旧包内容。如果这些文件名已经存在且内容满足本次标记，只返回已有同名文件，不再次生成。",
+        "tags": [
+          "DIV"
+        ]
+      },
+      "clipboardBefore": "repoconduit-native-message-copy-v1",
+      "clipboardAfter": "这是同一无敏感文件验收议题中的一个独立新尝试，标记 rcac_download_probe_v2_a2_20261009。之前的 v2 请求结果未知，请不要重试、覆盖或删除此前文件。本次仅使用新文件名 rcac-download-probe-v2-a2.zip 和 preview-v2-a2.png。使用文件生成工具实际创建 ZIP，内含 README.md（新标记和第二版字样）、index.html（静态简单页面，无脚本或外部资源）、manifest.json（文件名列表、新标记、parentMarker 为 rcac_download_probe_20261007）、notes/second.md（含新标记）、preview-v2-a2.png（64×64蓝色纯色小图），并提供同一 PNG 的单独下载。工具计算 ZIP 和 PNG 各自准确字节数与 SHA-256。最终只返回两个真实下载链接和两个短段落的字节数、哈希与文件清单，不用列表、表格、标题、代码块或行内代码。不要读取仓库、账户设置、外部网站或其他文件，不要执行旧包内容。如果这些文件名已经存在且内容满足本次标记，只返回已有同名文件，不再次生成。"
+    },
+    {
+      "kind": "native_message_attachment_copy_v1",
+      "before": {
+        "nativeSessionId": "11111111-1111-4111-8111-111111111111",
+        "nativeMessageId": "00000000-0000-4000-8000-000000000102",
+        "role": "assistant",
+        "text": "下载 rcac-download-probe-v2-a2.zip\n\nZIP：1091 字节，SHA-256 774cf2747d2264912805b8fad97c9eb69073fd464987888ad4d6a5eb2bb1daaf。文件清单：README.md、index.html、manifest.json、notes/second.md、preview-v2-a2.png。\n\nPNG：153 字节，SHA-256 0a794b7ab2a9413ffcf2f0a16dc23804207ea7207fee4eb83a51f56d1639fcc7。文件清单：preview-v2-a2.png。 \n\npreview-v2-a2.png\nImage",
+        "tags": [
+          "DIV",
+          "P",
+          "SPAN",
+          "svg",
+          "path",
+          "BUTTON",
+          "use"
+        ]
+      },
+      "after": {
+        "nativeSessionId": "11111111-1111-4111-8111-111111111111",
+        "nativeMessageId": "00000000-0000-4000-8000-000000000102",
+        "role": "assistant",
+        "text": "下载 rcac-download-probe-v2-a2.zip\n\nZIP：1091 字节，SHA-256 774cf2747d2264912805b8fad97c9eb69073fd464987888ad4d6a5eb2bb1daaf。文件清单：README.md、index.html、manifest.json、notes/second.md、preview-v2-a2.png。\n\nPNG：153 字节，SHA-256 0a794b7ab2a9413ffcf2f0a16dc23804207ea7207fee4eb83a51f56d1639fcc7。文件清单：preview-v2-a2.png。 \n\npreview-v2-a2.png\nImage",
+        "tags": [
+          "DIV",
+          "P",
+          "SPAN",
+          "svg",
+          "path",
+          "BUTTON",
+          "use"
+        ]
+      },
+      "clipboardBefore": "repoconduit-native-message-copy-v1",
+      "clipboardAfter": "rcac-download-probe-v2-a2.zip[下载 rcac-download-probe-v2-a2.zip](sandbox:/mnt/data/rcac-download-probe-v2-a2.zip)\n\n:chatgpt-content-reference{index=\"1\"}[下载 preview-v2-a2.png](sandbox:/mnt/data/preview-v2-a2.png)\n\nZIP：1091 字节，SHA-256 774cf2747d2264912805b8fad97c9eb69073fd464987888ad4d6a5eb2bb1daaf。文件清单：README.md、index.html、manifest.json、notes/second.md、preview-v2-a2.png。\n\nPNG：153 字节，SHA-256 0a794b7ab2a9413ffcf2f0a16dc23804207ea7207fee4eb83a51f56d1639fcc7。文件清单：preview-v2-a2.png。",
+      "attachmentBefore": {
+        "account": {
+          "fields": [
+            {
+              "label": "Email",
+              "value": "synthetic@example.test"
+            }
+          ]
+        },
+        "dom": {
+          "blocks": [
+            {
+              "ancestry": [
+                {
+                  "attributes": [
+                    [
+                      "data-file-reference",
+                      "true"
+                    ],
+                    [
+                      "data-markdown-copy-text",
+                      "rcac-download-probe-v2-a2.zip"
+                    ],
+                    [
+                      "role",
+                      "button"
+                    ],
+                    [
+                      "aria-busy",
+                      "false"
+                    ],
+                    [
+                      "aria-label",
+                      "Download rcac-download-probe-v2-a2.zip"
+                    ],
+                    [
+                      "data-state",
+                      "closed"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-copy-reference",
+                      "0"
+                    ],
+                    [
+                      "data-markdown-copy",
+                      "contents"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "P"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-markdown-text-style",
+                      "assistant-message"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-selection-conversation-id",
+                      "11111111-1111-4111-8111-111111111111"
+                    ],
+                    [
+                      "data-chatgpt-selection-message-id",
+                      "00000000-0000-4000-8000-000000000102"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-talvt-turn-state",
+                      "complete"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-turn-key",
+                      "00000000-0000-4000-8000-000000000104"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-conversation-selection-target",
+                      "true"
+                    ]
+                  ],
+                  "tag": "DIV"
+                }
+              ],
+              "filename": "rcac-download-probe-v2-a2.zip",
+              "kind": "file_reference",
+              "referenceIndex": "0",
+              "renderedText": "下载 rcac-download-probe-v2-a2.zip",
+              "visible": true
+            },
+            {
+              "kind": "text",
+              "renderedText": "ZIP：1091 字节，SHA-256 774cf2747d2264912805b8fad97c9eb69073fd464987888ad4d6a5eb2bb1daaf。文件清单：README.md、index.html、manifest.json、notes/second.md、preview-v2-a2.png。"
+            },
+            {
+              "analysisControl": {
+                "ancestry": [
+                  {
+                    "attributes": [
+                      [
+                        "aria-label",
+                        "View analysis"
+                      ]
+                    ],
+                    "tag": "BUTTON"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-state",
+                        "closed"
+                      ]
+                    ],
+                    "tag": "SPAN"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "SPAN"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "P"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-markdown-text-style",
+                        "assistant-message"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-chatgpt-selection-conversation-id",
+                        "11111111-1111-4111-8111-111111111111"
+                      ],
+                      [
+                        "data-chatgpt-selection-message-id",
+                        "00000000-0000-4000-8000-000000000102"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-talvt-turn-state",
+                        "complete"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-turn-key",
+                        "00000000-0000-4000-8000-000000000104"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-chatgpt-conversation-selection-target",
+                        "true"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  }
+                ],
+                "label": "View analysis"
+              },
+              "kind": "text",
+              "renderedText": "PNG：153 字节，SHA-256 0a794b7ab2a9413ffcf2f0a16dc23804207ea7207fee4eb83a51f56d1639fcc7。文件清单：preview-v2-a2.png。 "
+            },
+            {
+              "ancestry": [
+                {
+                  "attributes": [
+                    [
+                      "aria-label",
+                      "Download file"
+                    ]
+                  ],
+                  "tag": "BUTTON"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-state",
+                      "closed"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-selection-conversation-id",
+                      "11111111-1111-4111-8111-111111111111"
+                    ],
+                    [
+                      "data-chatgpt-selection-message-id",
+                      "00000000-0000-4000-8000-000000000102"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-talvt-turn-state",
+                      "complete"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-turn-key",
+                      "00000000-0000-4000-8000-000000000104"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-conversation-selection-target",
+                      "true"
+                    ]
+                  ],
+                  "tag": "DIV"
+                }
+              ],
+              "auxiliaryLabel": "Open file",
+              "downloadLabel": "Download file",
+              "filename": "preview-v2-a2.png",
+              "kind": "image_card",
+              "previewLabel": "Open preview of preview-v2-a2.png",
+              "typeImage": "Image",
+              "visible": true
+            }
+          ],
+          "message": {
+            "attributes": [
+              [
+                "data-chatgpt-selection-conversation-id",
+                "11111111-1111-4111-8111-111111111111"
+              ],
+              [
+                "data-chatgpt-selection-message-id",
+                "00000000-0000-4000-8000-000000000102"
+              ]
+            ],
+            "tag": "DIV"
+          },
+          "stateNode": {
+            "attributes": [
+              [
+                "data-talvt-turn-state",
+                "complete"
+              ]
+            ],
+            "tag": "DIV"
+          },
+          "turn": {
+            "attributes": [
+              [
+                "data-turn-key",
+                "00000000-0000-4000-8000-000000000104"
+              ]
+            ],
+            "tag": "DIV"
+          }
+        },
+        "sourceKind": "observed_chatgpt_dom_attachment_v1",
+        "ui": {
+          "composerText": "",
+          "dialogs": [],
+          "generationControls": [],
+          "turnStates": [
+            "complete",
+            "complete"
+          ],
+          "url": "https://chatgpt.com/c/11111111-1111-4111-8111-111111111111"
+        }
+      },
+      "attachmentAfter": {
+        "account": {
+          "fields": [
+            {
+              "label": "Email",
+              "value": "synthetic@example.test"
+            }
+          ]
+        },
+        "dom": {
+          "blocks": [
+            {
+              "ancestry": [
+                {
+                  "attributes": [
+                    [
+                      "data-file-reference",
+                      "true"
+                    ],
+                    [
+                      "data-markdown-copy-text",
+                      "rcac-download-probe-v2-a2.zip"
+                    ],
+                    [
+                      "role",
+                      "button"
+                    ],
+                    [
+                      "aria-busy",
+                      "false"
+                    ],
+                    [
+                      "aria-label",
+                      "Download rcac-download-probe-v2-a2.zip"
+                    ],
+                    [
+                      "data-state",
+                      "closed"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-copy-reference",
+                      "0"
+                    ],
+                    [
+                      "data-markdown-copy",
+                      "contents"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "P"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-markdown-text-style",
+                      "assistant-message"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-selection-conversation-id",
+                      "11111111-1111-4111-8111-111111111111"
+                    ],
+                    [
+                      "data-chatgpt-selection-message-id",
+                      "00000000-0000-4000-8000-000000000102"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-talvt-turn-state",
+                      "complete"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-turn-key",
+                      "00000000-0000-4000-8000-000000000104"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-conversation-selection-target",
+                      "true"
+                    ]
+                  ],
+                  "tag": "DIV"
+                }
+              ],
+              "filename": "rcac-download-probe-v2-a2.zip",
+              "kind": "file_reference",
+              "referenceIndex": "0",
+              "renderedText": "下载 rcac-download-probe-v2-a2.zip",
+              "visible": true
+            },
+            {
+              "kind": "text",
+              "renderedText": "ZIP：1091 字节，SHA-256 774cf2747d2264912805b8fad97c9eb69073fd464987888ad4d6a5eb2bb1daaf。文件清单：README.md、index.html、manifest.json、notes/second.md、preview-v2-a2.png。"
+            },
+            {
+              "analysisControl": {
+                "ancestry": [
+                  {
+                    "attributes": [
+                      [
+                        "aria-label",
+                        "View analysis"
+                      ]
+                    ],
+                    "tag": "BUTTON"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-state",
+                        "closed"
+                      ]
+                    ],
+                    "tag": "SPAN"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "SPAN"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "P"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-markdown-text-style",
+                        "assistant-message"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-chatgpt-selection-conversation-id",
+                        "11111111-1111-4111-8111-111111111111"
+                      ],
+                      [
+                        "data-chatgpt-selection-message-id",
+                        "00000000-0000-4000-8000-000000000102"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-talvt-turn-state",
+                        "complete"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-turn-key",
+                        "00000000-0000-4000-8000-000000000104"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [],
+                    "tag": "DIV"
+                  },
+                  {
+                    "attributes": [
+                      [
+                        "data-chatgpt-conversation-selection-target",
+                        "true"
+                      ]
+                    ],
+                    "tag": "DIV"
+                  }
+                ],
+                "label": "View analysis"
+              },
+              "kind": "text",
+              "renderedText": "PNG：153 字节，SHA-256 0a794b7ab2a9413ffcf2f0a16dc23804207ea7207fee4eb83a51f56d1639fcc7。文件清单：preview-v2-a2.png。 "
+            },
+            {
+              "ancestry": [
+                {
+                  "attributes": [
+                    [
+                      "aria-label",
+                      "Download file"
+                    ]
+                  ],
+                  "tag": "BUTTON"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-state",
+                      "closed"
+                    ]
+                  ],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "SPAN"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-selection-conversation-id",
+                      "11111111-1111-4111-8111-111111111111"
+                    ],
+                    [
+                      "data-chatgpt-selection-message-id",
+                      "00000000-0000-4000-8000-000000000102"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-talvt-turn-state",
+                      "complete"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-turn-key",
+                      "00000000-0000-4000-8000-000000000104"
+                    ]
+                  ],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [],
+                  "tag": "DIV"
+                },
+                {
+                  "attributes": [
+                    [
+                      "data-chatgpt-conversation-selection-target",
+                      "true"
+                    ]
+                  ],
+                  "tag": "DIV"
+                }
+              ],
+              "auxiliaryLabel": "Open file",
+              "downloadLabel": "Download file",
+              "filename": "preview-v2-a2.png",
+              "kind": "image_card",
+              "previewLabel": "Open preview of preview-v2-a2.png",
+              "typeImage": "Image",
+              "visible": true
+            }
+          ],
+          "message": {
+            "attributes": [
+              [
+                "data-chatgpt-selection-conversation-id",
+                "11111111-1111-4111-8111-111111111111"
+              ],
+              [
+                "data-chatgpt-selection-message-id",
+                "00000000-0000-4000-8000-000000000102"
+              ]
+            ],
+            "tag": "DIV"
+          },
+          "stateNode": {
+            "attributes": [
+              [
+                "data-talvt-turn-state",
+                "complete"
+              ]
+            ],
+            "tag": "DIV"
+          },
+          "turn": {
+            "attributes": [
+              [
+                "data-turn-key",
+                "00000000-0000-4000-8000-000000000104"
+              ]
+            ],
+            "tag": "DIV"
+          }
+        },
+        "sourceKind": "observed_chatgpt_dom_attachment_v1",
+        "ui": {
+          "composerText": "",
+          "dialogs": [],
+          "generationControls": [],
+          "turnStates": [
+            "complete",
+            "complete"
+          ],
+          "url": "https://chatgpt.com/c/11111111-1111-4111-8111-111111111111"
+        }
+      }
+    }
+  ]
+}

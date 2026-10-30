@@ -1,0 +1,635 @@
+{
+  "bootId": "00000000-0000-4000-8000-000000000004",
+  "uid": 1000,
+  "observerNamespaces": {
+    "pid": "pid:[4026532221]",
+    "mnt": "mnt:[4026532219]",
+    "net": "net:[4026531833]",
+    "user": "user:[4026531837]",
+    "ipc": "ipc:[4026532208]",
+    "uts": "uts:[4026532220]",
+    "cgroup": "cgroup:[4026531835]"
+  },
+  "unitBefore": {
+    "MainPID": "459",
+    "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+    "Id": "rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "running",
+    "InvocationID": "00000000000000000000000000000002"
+  },
+  "unitAfter": {
+    "MainPID": "459",
+    "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+    "Id": "rcac-investigator-00000000-0000-4000-8000-000000000003.service",
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "running",
+    "InvocationID": "00000000000000000000000000000002"
+  },
+  "processes": {
+    "parent": {
+      "pid": 459,
+      "startTicks": 679,
+      "state": "S",
+      "ppid": 266,
+      "statRaw": "459 (python3) S 266 459 459 0 -1 4194560 2068 0 0 0 3 1 0 0 20 0 1 0 679 22368256 4116 18446744073709551615 111159401791488 111159404631565 140729969045968 0 0 0 0 16781312 2 1 0 0 17 0 0 0 0 0 0 111159407003696 111159407287768 111159864352768 140729969051600 140729969081913 140729969081913 140729969082343 0\n",
+      "namespaces": {
+        "pid": "pid:[4026532221]",
+        "mnt": "mnt:[4026532219]",
+        "net": "net:[4026531833]",
+        "user": "user:[4026531837]",
+        "ipc": "ipc:[4026532208]",
+        "uts": "uts:[4026532220]",
+        "cgroup": "cgroup:[4026531835]"
+      },
+      "statusRaw": "Name:\tpython3\nUmask:\t0002\nState:\tS (sleeping)\nTgid:\t459\nNgid:\t0\nPid:\t459\nPPid:\t266\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t4 20 24 25 27 29 30 44 46 116 1000 1001 \nNStgid:\t459\nNSpid:\t459\nNSpgid:\t459\nNSsid:\t459\nKthread:\t0\nVmPeak:\t   21892 kB\nVmSize:\t   21844 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t   16568 kB\nVmRSS:\t   16568 kB\nRssAnon:\t    7080 kB\nRssFile:\t    9488 kB\nRssShmem:\t       0 kB\nVmData:\t    7620 kB\nVmStk:\t     160 kB\nVmExe:\t    2776 kB\nVmLib:\t    4988 kB\nVmPTE:\t      84 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t1/31727\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000001001000\nSigCgt:\t0000000000000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t000001ffffffffff\nCapAmb:\t0000000000000000\nNoNewPrivs:\t0\nSeccomp:\t0\nSeccomp_filters:\t0\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t23\nnonvoluntary_ctxt_switches:\t3\n",
+      "selectedStatus": {
+        "PPid": "266",
+        "Uid": "1000\t1000\t1000\t1000",
+        "Gid": "1000\t1000\t1000\t1000",
+        "NSpid": "459",
+        "CapInh": "0000000000000000",
+        "CapPrm": "0000000000000000",
+        "CapEff": "0000000000000000",
+        "CapBnd": "000001ffffffffff",
+        "CapAmb": "0000000000000000",
+        "NoNewPrivs": "0"
+      },
+      "uidMap": "         0          0 4294967295\n",
+      "gidMap": "         0          0 4294967295\n",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service\n",
+      "exe": "/usr/bin/python3.10",
+      "cmdline": "/usr/bin/python3\u0000-I\u0000-S\u0000-c\u0000\nimport errno, fcntl, hashlib, json, os, re, select, stat, subprocess, sys, time, uuid\nop, root, attempt, workspace, boot, uid_text, unit, epoch_text, source_digest, profile_digest, command_digest, wanted_inv, wanted_group, command_text, limit_text, bootstrap_text = sys.argv[1:17]\nuid, epoch = int(uid_text), int(epoch_text)\nif op not in ('prepare','status','close','release','enter_wait_exec'): raise ValueError('operation')\nif os.getuid() != uid: raise ValueError('uid')\nif open('/proc/sys/kernel/random/boot_id', encoding='ascii').read().strip() != boot: raise ValueError('boot')\ngroup = '/user.slice/user-%d.slice/user@%d.service/app.slice/%s' % (uid,uid,unit)\nif op == 'release':\n    if not re.fullmatch('[0-9a-f]{32}', wanted_inv) or wanted_group != group: raise ValueError('release identity')\nelif wanted_inv or wanted_group: raise ValueError('unexpected identity')\nif op == 'enter_wait_exec':\n    limit=int(limit_text)\n    if limit<1 or limit>600: raise ValueError('wall limit')\n    if not command_text or hashlib.sha256(command_text.encode()).hexdigest() != command_digest: raise ValueError('command digest')\n    if hashlib.sha256(bootstrap_text.encode()).hexdigest() != '64f7fd88cbeef270f5bc25d2c26774f22928a19a26a78d859a37d3fa6f84ba9f': raise ValueError('bootstrap digest')\n    command = json.loads(command_text)\n    if set(command) != {'recipe','bootstrapSha256','configFiles','file','argv','env'} or command['recipe'] != 'claude_model_bootstrap_config_v2' or command['bootstrapSha256'] != '64f7fd88cbeef270f5bc25d2c26774f22928a19a26a78d859a37d3fa6f84ba9f' or command['file'] != '/usr/bin/bwrap' or not isinstance(command['argv'],list) or not all(isinstance(a,str) for a in command['argv']) or command['argv'][-10:] != ['--ro-bind-data','10','/opt/rcac-bootstrap.py','--info-fd','11','--','/usr/bin/python3','-I','-S','/opt/rcac-bootstrap.py'] or command['env'] != {'HOME':'/home/claude','PATH':'/runtime/deps/usr/bin:/node/bin:/usr/bin:/bin','LD_LIBRARY_PATH':'/runtime/deps/usr/lib/x86_64-linux-gnu'}:\n        raise ValueError('command shape')\nelif command_text or limit_text or bootstrap_text: raise ValueError('unexpected command')\n\nimport fcntl\nimport hashlib\nimport json\nimport os\nimport re\nimport select\nimport time\n\n_CONFIG_TARGETS = ('/opt/srt.json', '/opt/mcp.json', '/opt/mcp-fifo.py')\n_CONFIG_KEYS = {'target', 'byteLength', 'sha256'}\n\ndef _config_object(pairs):\n    result = {}\n    for key, value in pairs:\n        if key in result:\n            raise ValueError('duplicate config key')\n        result[key] = value\n    return result\n\ndef _config_read_some(count, deadline):\n    remaining = deadline - time.monotonic()\n    if remaining <= 0:\n        raise TimeoutError('config deadline')\n    if not select.select([0], [], [], remaining)[0]:\n        raise TimeoutError('config deadline')\n    data = os.read(0, count)\n    if not data:\n        raise EOFError('truncated config input')\n    return data\n\ndef _config_read_exact(count, deadline):\n    chunks = []\n    remaining = count\n    while remaining:\n        part = _config_read_some(min(remaining, 8192), deadline)\n        chunks.append(part)\n        remaining -= len(part)\n    return b''.join(chunks)\n\ndef read_sealed_config(expected_files, deadline):\n    if type(deadline) not in (float, int):\n        raise ValueError('invalid config deadline')\n    if type(expected_files) not in (list, tuple) or len(expected_files) != 3:\n        raise ValueError('invalid expected config files')\n    trusted = []\n    total = 0\n    for index, item in enumerate(expected_files):\n        if type(item) is not dict or set(item) != _CONFIG_KEYS:\n            raise ValueError('invalid expected config metadata')\n        target, size, digest = item['target'], item['byteLength'], item['sha256']\n        if target != _CONFIG_TARGETS[index] or type(size) is not int or not (1 <= size <= 65536):\n            raise ValueError('invalid expected config size or target')\n        if type(digest) is not str or not re.fullmatch('[0-9a-f]{64}', digest):\n            raise ValueError('invalid expected config digest')\n        total += size\n        trusted.append({'target': target, 'byteLength': size, 'sha256': digest})\n    if total > 131072:\n        raise ValueError('config input too large')\n    owned = []\n    try:\n        header = bytearray()\n        while True:\n            if len(header) >= 2048:\n                raise ValueError('config header too large')\n            character = _config_read_some(1, deadline)\n            if character == b'\\n':\n                break\n            header.extend(character)\n        decoded = json.loads(header.decode('ascii'), object_pairs_hook=_config_object)\n        if type(decoded) is not dict or set(decoded) != {'protocol', 'files'} or \\\n                decoded['protocol'] != 'claude_model_config_input_v1' or \\\n                type(decoded['files']) is not list or len(decoded['files']) != 3:\n            raise ValueError('invalid config header')\n        for index, item in enumerate(decoded['files']):\n            if type(item) is not dict or set(item) != _CONFIG_KEYS or \\\n                    type(item['target']) is not str or \\\n                    type(item['byteLength']) is not int or \\\n                    type(item['sha256']) is not str or \\\n                    not re.fullmatch('[0-9a-f]{64}', item['sha256']) or \\\n                    item != trusted[index]:\n                raise ValueError('config metadata mismatch')\n        result = []\n        for item in trusted:\n            body = _config_read_exact(item['byteLength'], deadline)\n            if hashlib.sha256(body).hexdigest() != item['sha256']:\n                raise ValueError('config body digest mismatch')\n            raw = os.memfd_create('rcac-config', os.MFD_CLOEXEC | os.MFD_ALLOW_SEALING)\n            owned.append(raw)\n            offset = 0\n            while offset < len(body):\n                written = os.write(raw, body[offset:])\n                if written <= 0:\n                    raise OSError('config memfd write failed')\n                offset += written\n            os.lseek(raw, 0, os.SEEK_SET)\n            fcntl.fcntl(raw, fcntl.F_ADD_SEALS,\n                        fcntl.F_SEAL_SEAL | fcntl.F_SEAL_SHRINK |\n                        fcntl.F_SEAL_GROW | fcntl.F_SEAL_WRITE)\n            high = fcntl.fcntl(raw, fcntl.F_DUPFD_CLOEXEC, 32)\n            owned.append(high)\n            os.close(raw)\n            owned.remove(raw)\n            result.append(high)\n        return tuple(result)\n    except BaseException:\n        for fd in reversed(owned):\n            try:\n                os.close(fd)\n            except OSError:\n                pass\n        raise\n\nconfig_fds=[]\nif op=='enter_wait_exec':\n    config_fds=read_sealed_config(command['configFiles'],time.monotonic()+min(5,limit))\nowned_fds=set(config_fds)\ndef open_root(path):\n    fd = os.open('/', os.O_RDONLY | os.O_DIRECTORY | os.O_CLOEXEC)\n    try:\n        for part in path.split('/')[1:]:\n            if not part or part in ('.','..'): raise ValueError('root path')\n            nxt = os.open(part, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW | os.O_CLOEXEC, dir_fd=fd)\n            s = os.fstat(nxt)\n            if not stat.S_ISDIR(s.st_mode) or s.st_uid not in (0,uid) or s.st_mode & 0o022: raise ValueError('root owner/mode')\n            os.close(fd); fd=nxt\n        s=os.fstat(fd)\n        if s.st_uid != uid or stat.S_IMODE(s.st_mode) != 0o700: raise ValueError('root mode')\n        return fd\n    except:\n        os.close(fd); raise\ndirectory=open_root(root)\nlock=os.open(attempt+'.model-supervisor.lock', os.O_RDWR | os.O_CREAT | os.O_NOFOLLOW | os.O_CLOEXEC, 0o600, dir_fd=directory)\nname=attempt+'.model-supervisor.json'\nidentity={'protocol':'claude_model_v1','action':'claude_model_v1','attemptId':attempt,'workspaceId':workspace,'bootId':boot,'uid':uid,'unitName':unit,'launchWorkerEpoch':epoch,'sourceDigest':source_digest,'profileDigest':profile_digest,'commandDigest':command_digest}\nbase=set(identity)|{'phase','closed'}\nnative={'invocationId','controlGroup','enterPid','enterStartTicks'}\ndef read_state():\n    try: fd=os.open(name,os.O_RDONLY|os.O_NOFOLLOW|os.O_CLOEXEC,dir_fd=directory)\n    except FileNotFoundError: return None\n    try:\n        s=os.fstat(fd)\n        if not stat.S_ISREG(s.st_mode) or s.st_uid!=uid or s.st_nlink!=1 or stat.S_IMODE(s.st_mode)!=0o600 or s.st_size>2048: raise ValueError('state mode')\n        state=json.loads(os.read(fd,2049))\n    finally: os.close(fd)\n    if not isinstance(state,dict) or any(state.get(k)!=v for k,v in identity.items()) or type(state.get('closed')) is not bool: raise ValueError('state identity')\n    if state.get('phase')=='prepared':\n        if set(state)!=base: raise ValueError('prepared fields')\n    elif state.get('phase') in ('entered','released','consumed'):\n        if set(state)!=base|native or not re.fullmatch('[0-9a-f]{32}',state['invocationId']) or state['controlGroup']!=group or type(state['enterPid']) is not int or state['enterPid']<=0 or type(state['enterStartTicks']) is not int or state['enterStartTicks']<=0: raise ValueError('native fields')\n    else: raise ValueError('phase')\n    return state\ndef persist(value):\n    temp=attempt+'.'+uuid.uuid4().hex+'.model-supervisor.tmp'\n    fd=os.open(temp,os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW|os.O_CLOEXEC,0o600,dir_fd=directory)\n    try:\n        data=(json.dumps(value,separators=(',',':'))+'\\n').encode('ascii')\n        if len(data)>2048: raise ValueError('state size')\n        while data: data=data[os.write(fd,data):]\n        os.fsync(fd)\n        os.rename(temp,name,src_dir_fd=directory,dst_dir_fd=directory)\n        os.fsync(directory)\n    finally:\n        os.close(fd)\n        try: os.unlink(temp,dir_fd=directory)\n        except FileNotFoundError: pass\ndef ticks(pid):\n    with open('/proc/%d/stat'%pid,encoding='ascii') as f: raw=f.read()\n    fields=raw[raw.rfind(')')+2:].split()\n    if fields[0] in ('Z','X','x'): raise ValueError('unit exited')\n    return int(fields[19])\ndef cgroup(pid):\n    with open('/proc/%d/cgroup'%pid,encoding='ascii') as f: rows=f.read().splitlines()\n    if len(rows)!=1 or not rows[0].startswith('0::'): raise ValueError('cgroup')\n    return rows[0][3:]\ndef locked():\n    fcntl.flock(lock,fcntl.LOCK_EX)\n    return read_state()\ndef unlock(): fcntl.flock(lock,fcntl.LOCK_UN)\n\ndef strict_object(pairs):\n    value={}\n    for key,item in pairs:\n        if key in value: raise ValueError('duplicate key')\n        value[key]=item\n    return value\ndef read_line(fd, cap, deadline):\n    result=bytearray()\n    while True:\n        remaining=deadline-time.monotonic()\n        if remaining<=0 or not select.select([fd],[],[],remaining)[0]: raise TimeoutError('line deadline')\n        part=os.read(fd,1)\n        if not part or len(result)>=cap: raise ValueError('line size/eof')\n        result.extend(part)\n        if part==b'\\n': return bytes(result)\ndef read_frame(deadline):\n    os.set_blocking(0,False)\n    header=json.loads(read_line(0,512,deadline)[:-1].decode('ascii'),object_pairs_hook=strict_object)\n    if type(header) is not dict or set(header)!={'protocol','byteLength','sha256'} or header['protocol']!='claude_model_bootstrap_v1' or type(header['byteLength']) is not int or not 1<=header['byteLength']<=16384 or type(header['sha256']) is not str or not re.fullmatch('[0-9a-f]{64}',header['sha256']): raise ValueError('frame header')\n    body=bytearray()\n    while len(body)<header['byteLength']:\n        remaining=deadline-time.monotonic()\n        if remaining<=0 or not select.select([0],[],[],remaining)[0]: raise TimeoutError('frame body')\n        part=os.read(0,header['byteLength']-len(body))\n        if not part: raise ValueError('short body')\n        body.extend(part)\n    remaining=deadline-time.monotonic()\n    if remaining<=0 or not select.select([0],[],[],remaining)[0] or os.read(0,1): raise ValueError('frame trailer')\n    if hashlib.sha256(body).hexdigest()!=header['sha256']: raise ValueError('frame hash')\n    return json.dumps(header,separators=(',',':')).encode('ascii')+b'\\n'+bytes(body)\ndef reserve(fd):\n    try: fcntl.fcntl(fd,fcntl.F_GETFD)\n    except OSError as exc:\n        if exc.errno==errno.EBADF: return\n        raise\n    raise ValueError('fixed fd occupied')\n\ndef stage_fd(fd):\n    owned_fds.add(fd)\n    try:\n        high=fcntl.fcntl(fd,fcntl.F_DUPFD_CLOEXEC,32)\n        owned_fds.add(high)\n        return high\n    finally: close_owned(fd)\n\ndef close_owned(fd):\n    if fd in owned_fds:\n        owned_fds.remove(fd)\n        os.close(fd)\ndef native_candidate(info, ready):\n    keys={'child-pid','cgroup-namespace','ipc-namespace','mnt-namespace','pid-namespace','uts-namespace'}\n    if type(info) is not dict or set(info)!=keys or type(info['child-pid']) is not int or info['child-pid']<=0 or any(type(info[k]) is not int or info[k]<=0 for k in keys-{'child-pid'}): raise ValueError('bwrap info')\n    pid=info['child-pid']\n    with open('/proc/%d/stat'%pid,encoding='ascii') as source: raw=source.read(4096)\n    if len(raw)>=4096 or not raw.startswith(str(pid)+' ('): raise ValueError('outer stat')\n    fields=raw[raw.rfind(')')+2:].split()\n    if len(fields)<20 or fields[0] in ('Z','X','x'): raise ValueError('outer state')\n    ticks=int(fields[19]); ns=os.readlink('/proc/%d/ns/pid'%pid)\n    with open('/proc/%d/status'%pid,encoding='ascii') as source: rows=source.read(8192).splitlines()\n    nsrows=[row for row in rows if row.startswith('NSpid:')]\n    if len(nsrows)!=1: raise ValueError('outer nspid')\n    nspid=[int(item) for item in nsrows[0].split()[1:]]\n    if ticks<=0 or ns!='pid:[%d]'%info['pid-namespace'] or not nspid or nspid[0]!=pid or nspid[-1]!=1: raise ValueError('outer mismatch')\n    if type(ready) is not dict or set(ready)!={'protocol','kind','pid','ppid','startTicks','namespaces','capEff','noNewPrivs'} or ready['protocol']!='claude_model_bootstrap_v1' or ready['kind']!='ready' or type(ready['pid']) is not int or ready['pid']<=1 or ready['ppid']!=1 or type(ready['startTicks']) is not int or ready['startTicks']<=0 or ready['capEff']!='0' or ready['noNewPrivs']!=1: raise ValueError('bootstrap ready')\n    names=ready['namespaces']\n    if type(names) is not dict or set(names)!={'pid','mnt','net','user','ipc','uts','cgroup'} or names['pid']!=ns or any(names[k]!='%s:[%d]'%(k,info[k+'-namespace']) for k in ('mnt','ipc','uts','cgroup')): raise ValueError('bootstrap namespaces')\n    return {'hostPid':pid,'startTicks':ticks,'pidNamespace':ns,'nspid':nspid}\ndef relay(child, wall_deadline):\n    streams={child.stdout.fileno():1,child.stderr.fileno():2}\n    pending={1:bytearray(),2:bytearray()}; totals={1:0,2:0}\n    for fd in [*streams,1,2]: os.set_blocking(fd,False)\n    while streams or pending[1] or pending[2]:\n        if time.monotonic()>=wall_deadline: raise TimeoutError('model relay')\n        readable,writable,_=select.select([fd for fd,to in streams.items() if len(pending[to])<65536],\n            [fd for fd in (1,2) if pending[fd]],[],.5)\n        for fd in readable:\n            dest=streams[fd]; chunk=os.read(fd,4096)\n            if chunk:\n                totals[dest]+=len(chunk)\n                if totals[dest]>(262144 if dest==1 else 8192): raise ValueError('model output bound')\n                pending[dest].extend(chunk)\n            else: del streams[fd]\n        for fd in writable:\n            used=os.write(fd,pending[fd]); del pending[fd][:used]\n    return child.wait(timeout=max(.1,wall_deadline-time.monotonic()))\ndef startup(child, info_read, consumed, deadline):\n    info_raw=bytearray(); ready_raw=bytearray(); error_bytes=0\n    descriptors={info_read:'info',child.stdout.fileno():'ready',child.stderr.fileno():'stderr'}\n    for fd in descriptors: os.set_blocking(fd,False)\n    info=None; ready=None\n    while info is None or ready is None:\n        remaining=deadline-time.monotonic()\n        if remaining<=0: raise TimeoutError('startup')\n        readable,_,_=select.select(list(descriptors),[],[],remaining)\n        if not readable: raise TimeoutError('startup')\n        for fd in readable:\n            part=os.read(fd,1024)\n            if not part:\n                if descriptors[fd] in ('info','ready') and (info if descriptors[fd]=='info' else ready) is None: raise ValueError('startup eof')\n                del descriptors[fd]; continue\n            role=descriptors[fd]\n            if role=='stderr':\n                error_bytes+=len(part)\n                if error_bytes: raise ValueError('bootstrap startup stderr')\n            elif role=='info':\n                info_raw.extend(part)\n                if len(info_raw)>2048: raise ValueError('info bound')\n                try: info=json.loads(info_raw.decode('ascii'),object_pairs_hook=strict_object)\n                except json.JSONDecodeError: pass\n            else:\n                ready_raw.extend(part)\n                if len(ready_raw)>512: raise ValueError('ready bound')\n                if ready_raw.endswith(b'\\n'):\n                    ready=json.loads(ready_raw[:-1].decode('ascii'),object_pairs_hook=strict_object)\n    outer=native_candidate(info,ready)\n    value={'protocol':'claude_model_startup_v1','kind':'bootstrap_ready_candidate',\n        'journal':consumed,'bootstrapSha256':'64f7fd88cbeef270f5bc25d2c26774f22928a19a26a78d859a37d3fa6f84ba9f',\n        'bwrapInfo':info,'outerCandidate':outer,'bootstrapReady':ready}\n    line=(json.dumps(value,separators=(',',':'))+'\\n').encode('ascii')\n    if len(line)>4096: raise ValueError('startup line bound')\n    if os.write(1,line)!=len(line): raise ValueError('startup short write')\ntry:\n    s=os.fstat(lock)\n    if not stat.S_ISREG(s.st_mode) or s.st_uid!=uid or s.st_nlink!=1 or stat.S_IMODE(s.st_mode)!=0o600: raise ValueError('lock mode')\n    state=locked()\n    try:\n        if op=='prepare':\n            if state is None:\n                state={**identity,'phase':'prepared','closed':False}; persist(state)\n            if state['phase']!='prepared' or state['closed']: raise ValueError('unavailable')\n        elif op=='status':\n            if state is None: raise ValueError('missing')\n        elif op=='close':\n            if state is None: state={**identity,'phase':'prepared','closed':True}\n            elif not state['closed']: state={**state,'closed':True}\n            persist(state)\n        elif op=='release':\n            if state is None or state['closed'] or state.get('invocationId')!=wanted_inv or state.get('controlGroup')!=wanted_group: raise ValueError('release unavailable')\n            if state['phase']=='entered':\n                if ticks(state['enterPid'])!=state['enterStartTicks'] or cgroup(state['enterPid'])!=group: raise ValueError('original unit exited')\n                state={**state,'phase':'released'}; persist(state)\n            elif state['phase'] not in ('released','consumed'): raise ValueError('release phase')\n        else:\n            if state is None or state['phase']!='prepared' or state['closed']: raise ValueError('enter unavailable')\n            invocation=os.environ.get('INVOCATION_ID','')\n            if not re.fullmatch('[0-9a-f]{32}',invocation) or cgroup(os.getpid())!=group: raise ValueError('original unit')\n            deadline=time.monotonic()+min(10,limit)\n            state={**state,'phase':'entered','invocationId':invocation,'controlGroup':group,'enterPid':os.getpid(),'enterStartTicks':ticks(os.getpid())}\n            persist(state)\n    finally: unlock()\n    if op=='enter_wait_exec':\n        while True:\n            state=locked()\n            try:\n                if state['closed']: raise ValueError('closed')\n                if time.monotonic()>=deadline:\n                    state={**state,'closed':True}; persist(state)\n                    raise TimeoutError('release timeout')\n                if state['phase']=='released':\n                    if state['enterPid']!=os.getpid() or state['enterStartTicks']!=ticks(os.getpid()) or cgroup(os.getpid())!=group: raise ValueError('original unit changed')\n                    break\n                if state['phase']!='entered': raise ValueError('phase')\n            finally: unlock()\n            time.sleep(.05)\n        child=None; info_read=None\n        try:\n            frame_deadline=time.monotonic()+5\n            for fd in (10,11,12,13,14): reserve(fd)\n            script=stage_fd(os.memfd_create('rcac-bootstrap',os.MFD_CLOEXEC|os.MFD_ALLOW_SEALING))\n            data=bootstrap_text.encode('utf-8')\n            while data: data=data[os.write(script,data):]\n            os.lseek(script,0,os.SEEK_SET)\n            fcntl.fcntl(script,fcntl.F_ADD_SEALS,fcntl.F_SEAL_SEAL|fcntl.F_SEAL_SHRINK|fcntl.F_SEAL_GROW|fcntl.F_SEAL_WRITE)\n            raw_read,raw_write=os.pipe2(os.O_CLOEXEC)\n            owned_fds.update((raw_read,raw_write))\n            info_read=stage_fd(raw_read); info_write=stage_fd(raw_write)\n            for fd in (10,11,12,13,14): reserve(fd)\n            for source,target in zip((script,info_write,*config_fds),(10,11,12,13,14)):\n                os.dup2(source,target,inheritable=True); owned_fds.add(target)\n            close_owned(script); close_owned(info_write)\n            state=locked()\n            try:\n                if state['closed'] or state['phase']!='released' or state['enterPid']!=os.getpid() or state['enterStartTicks']!=ticks(os.getpid()) or cgroup(os.getpid())!=group:\n                    raise ValueError('closed before spawn')\n                consumed={**state,'phase':'consumed'}; persist(consumed)\n                child=subprocess.Popen(['/usr/bin/bwrap',*command['argv']],stdin=subprocess.PIPE,\n                    stdout=subprocess.PIPE,stderr=subprocess.PIPE,env=command['env'],\n                    close_fds=True,pass_fds=(10,11,12,13,14))\n            finally:\n                unlock()\n                for fd in (10,11,12,13,14): close_owned(fd)\n            startup(child,info_read,consumed,frame_deadline)\n            frame=read_frame(frame_deadline)\n            state=locked()\n            try:\n                if state['closed'] or state['phase']!='consumed' or state['enterPid']!=os.getpid() or state['enterStartTicks']!=ticks(os.getpid()) or cgroup(os.getpid())!=group: raise ValueError('closed before frame')\n                target=child.stdin.fileno(); os.set_blocking(target,False)\n                view=memoryview(frame)\n                while view:\n                    remaining=frame_deadline-time.monotonic()\n                    if remaining<=0 or not select.select([],[target],[],remaining)[1]: raise TimeoutError('frame delivery')\n                    used=os.write(target,view)\n                    if used<=0: raise ValueError('frame delivery')\n                    view=view[used:]\n                child.stdin.close()\n            finally: unlock()\n            outcome=relay(child,time.monotonic()+limit)\n            if outcome!=0: raise ValueError('model child exited')\n        except:\n            state=locked()\n            try:\n                if state['phase'] in ('released','consumed') and not state['closed']: persist({**state,'closed':True})\n            finally: unlock()\n            if child is not None and child.poll() is None:\n                child.terminate()\n                try: child.wait(timeout=1)\n                except subprocess.TimeoutExpired:\n                    child.kill(); child.wait(timeout=1)\n            raise\n        finally:\n            if info_read is not None: close_owned(info_read)\n    else:\n        sys.stdout.write(json.dumps(state,separators=(',',':'))+'\\n')\nfinally:\n    for fd in tuple(owned_fds): close_owned(fd)\n    os.close(lock); os.close(directory)\n\u0000enter_wait_exec\u0000/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003\u0000attempt_00000000-0000-4000-8000-000000000003\u0000ws_00000000-0000-4000-8000-000000000003\u000000000000-0000-4000-8000-000000000004\u00001000\u0000rcac-investigator-00000000-0000-4000-8000-000000000003.service\u00001\u0000270c0d536da1e328c882cda409fc95a131d86851b817f538836313cad3b9ed03\u000023122cab18cb085dab72b43a7d2295fc82f52b796d8e7d835b07f0981504916b\u0000ef67bd76ad8acfc1387d364377e74f6358da3c5d689f0d046e399d7a21ecf87b\u0000\u0000\u0000{\"recipe\":\"claude_model_bootstrap_config_v2\",\"bootstrapSha256\":\"64f7fd88cbeef270f5bc25d2c26774f22928a19a26a78d859a37d3fa6f84ba9f\",\"configFiles\":[{\"target\":\"/opt/srt.json\",\"byteLength\":353,\"sha256\":\"94cfed7ac40ddc57f806fcf260a715912644b6a17ff1a0c9defede9398578463\"},{\"target\":\"/opt/mcp.json\",\"byteLength\":109,\"sha256\":\"a91152afdde8478f1af0186713e91ad5040dbb9a54ffb3ea1c4da1e19e0f668b\"},{\"target\":\"/opt/mcp-fifo.py\",\"byteLength\":5454,\"sha256\":\"6c58227d83769c05c948a15f64c4cb415259e41909db4890ddfba93e0f13a367\"}],\"file\":\"/usr/bin/bwrap\",\"argv\":[\"--clearenv\",\"--setenv\",\"HOME\",\"/home/claude\",\"--setenv\",\"PATH\",\"/runtime/deps/usr/bin:/node/bin:/usr/bin:/bin\",\"--setenv\",\"LD_LIBRARY_PATH\",\"/runtime/deps/usr/lib/x86_64-linux-gnu\",\"--unshare-all\",\"--share-net\",\"--die-with-parent\",\"--new-session\",\"--ro-bind\",\"/usr\",\"/usr\",\"--ro-bind\",\"/bin\",\"/bin\",\"--ro-bind\",\"/lib\",\"/lib\",\"--ro-bind\",\"/lib64\",\"/lib64\",\"--dir\",\"/etc\",\"--dir\",\"/etc/alternatives\",\"--ro-bind\",\"/usr/bin/which.debianutils\",\"/etc/alternatives/which\",\"--proc\",\"/proc\",\"--dev\",\"/dev\",\"--tmpfs\",\"/tmp\",\"--tmpfs\",\"/work\",\"--dir\",\"/runtime\",\"--dir\",\"/opt\",\"--dir\",\"/home\",\"--dir\",\"/relay\",\"--ro-bind\",\"/home/fixture/.local/share/rcac-second-runtime-20260929/node_modules\",\"/runtime/node_modules\",\"--ro-bind\",\"/home/fixture/.local/share/rcac-second-runtime-20260929/deps\",\"/runtime/deps\",\"--ro-bind\",\"/home/fixture/.hermes/node\",\"/node\",\"--ro-bind-data\",\"12\",\"/opt/srt.json\",\"--ro-bind-data\",\"13\",\"/opt/mcp.json\",\"--ro-bind-data\",\"14\",\"/opt/mcp-fifo.py\",\"--ro-bind\",\"/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/auth\",\"/home/claude\",\"--bind\",\"/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003-1.mcp\",\"/relay\",\"--chdir\",\"/work\",\"--ro-bind-data\",\"10\",\"/opt/rcac-bootstrap.py\",\"--info-fd\",\"11\",\"--\",\"/usr/bin/python3\",\"-I\",\"-S\",\"/opt/rcac-bootstrap.py\"],\"env\":{\"HOME\":\"/home/claude\",\"PATH\":\"/runtime/deps/usr/bin:/node/bin:/usr/bin:/bin\",\"LD_LIBRARY_PATH\":\"/runtime/deps/usr/lib/x86_64-linux-gnu\"}}\u000020\u0000import fcntl, hashlib, hmac, json, os, select, sys, time\n\ndeadline = time.monotonic() + 5.0\n\ndef fail():\n    os._exit(86)\n\ndef read_bounded(count):\n    while True:\n        left = deadline - time.monotonic()\n        if left <= 0:\n            fail()\n        readable, _, _ = select.select([0], [], [], left)\n        if not readable:\n            fail()\n        try:\n            return os.read(0, count)\n        except InterruptedError:\n            continue\n\ndef unique_pairs(pairs):\n    result = {}\n    for key, value in pairs:\n        if key in result:\n            raise ValueError('duplicate header key')\n        result[key] = value\n    return result\n\ntry:\n    if len(sys.argv) != 1:\n        fail()\n    names = os.listdir('/proc/self/fd')\n    if len(names) > 64 or any(not name.isdecimal() for name in names):\n        fail()\n    for name in names:\n        fd = int(name)\n        if fd > 2:\n            try:\n                os.close(fd)\n            except OSError as exc:\n                if exc.errno != 9:\n                    raise\n    fields = {}\n    with open('/proc/self/status', encoding='ascii') as source:\n        for row in source:\n            key, sep, value = row.partition(':')\n            if sep and key in ('CapEff', 'NoNewPrivs'):\n                if key in fields:\n                    fail()\n                fields[key] = value.strip()\n    if set(fields) != {'CapEff', 'NoNewPrivs'} or int(fields['CapEff'], 16) != 0 or fields['NoNewPrivs'] != '1':\n        fail()\n    with open('/proc/self/stat', encoding='ascii') as source:\n        statline = source.read(4096)\n    if len(statline) >= 4096 or not statline.startswith(str(os.getpid()) + ' ('):\n        fail()\n    after = statline[statline.rfind(')') + 2:].split()\n    if len(after) < 20:\n        fail()\n    ticks = int(after[19])\n    if ticks <= 0:\n        fail()\n    namespaces = {key: os.readlink('/proc/self/ns/' + key) for key in\n                  ('pid', 'mnt', 'net', 'user', 'ipc', 'uts', 'cgroup')}\n    ready = {'protocol': 'claude_model_bootstrap_v1', 'kind': 'ready',\n             'pid': os.getpid(), 'ppid': os.getppid(), 'startTicks': ticks,\n             'namespaces': namespaces, 'capEff': '0', 'noNewPrivs': 1}\n    line = json.dumps(ready, separators=(',', ':')).encode('ascii') + b'\\n'\n    if len(line) > 512:\n        fail()\n    os.write(1, line)\n\n    header = bytearray()\n    while True:\n        part = read_bounded(1)\n        if not part:\n            fail()\n        header.extend(part)\n        if len(header) > 512:\n            fail()\n        if part == b'\\n':\n            break\n    data = json.loads(header[:-1].decode('ascii'), object_pairs_hook=unique_pairs)\n    if (type(data) is not dict or set(data) != {'protocol', 'byteLength', 'sha256'} or\n        data['protocol'] != 'claude_model_bootstrap_v1' or\n        type(data['byteLength']) is not int or not 1 <= data['byteLength'] <= 16384 or\n        type(data['sha256']) is not str or len(data['sha256']) != 64 or\n        any(ch not in '0123456789abcdef' for ch in data['sha256'])):\n        fail()\n    body = bytearray()\n    while len(body) < data['byteLength']:\n        part = read_bounded(data['byteLength'] - len(body))\n        if not part:\n            fail()\n        body.extend(part)\n    if read_bounded(1):\n        fail()\n    if not hmac.compare_digest(hashlib.sha256(body).hexdigest(), data['sha256']):\n        fail()\n    memfd = os.memfd_create('claude-model-prompt', os.MFD_CLOEXEC | os.MFD_ALLOW_SEALING)\n    if os.write(memfd, body) != len(body):\n        fail()\n    os.lseek(memfd, 0, os.SEEK_SET)\n    seals = fcntl.F_SEAL_SEAL | fcntl.F_SEAL_SHRINK | fcntl.F_SEAL_GROW | fcntl.F_SEAL_WRITE\n    fcntl.fcntl(memfd, fcntl.F_ADD_SEALS, seals)\n    os.dup2(memfd, 0)\n    os.close(memfd)\nexcept BaseException:\n    fail()\n\nos.execve('/runtime/node_modules/.bin/srt', ['/runtime/node_modules/.bin/srt', '--settings', '/opt/srt.json', '--', '/runtime/node_modules/.bin/claude', '--print', '--no-session-persistence', '--restricted', '--permission-mode', 'dontAsk', '--setting-sources', '', '--strict-mcp-config', '--mcp-config', '/opt/mcp.json', '--tools', '', '--disable-slash-commands', '--output-format', 'json'], {'HOME': '/home/claude', 'PATH': '/runtime/deps/usr/bin:/node/bin:/usr/bin:/bin', 'LD_LIBRARY_PATH': '/runtime/deps/usr/lib/x86_64-linux-gnu'})\u0000",
+      "cwd": "/home/fixture",
+      "root": "/",
+      "fds": [
+        {
+          "fd": 0,
+          "target": "pipe:[1894]",
+          "fdinfo": "pos:\t0\nflags:\t04000\nmnt_id:\t16\nino:\t1894\n",
+          "direction": "read"
+        },
+        {
+          "fd": 1,
+          "target": "pipe:[1895]",
+          "fdinfo": "pos:\t0\nflags:\t01\nmnt_id:\t16\nino:\t1895\n",
+          "direction": "write"
+        },
+        {
+          "fd": 2,
+          "target": "pipe:[1896]",
+          "fdinfo": "pos:\t0\nflags:\t01\nmnt_id:\t16\nino:\t1896\n",
+          "direction": "write"
+        },
+        {
+          "fd": 3,
+          "target": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003",
+          "fdinfo": "pos:\t0\nflags:\t02700000\nmnt_id:\t82\nino:\t294441\n",
+          "direction": "read"
+        },
+        {
+          "fd": 4,
+          "target": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003.model-supervisor.lock",
+          "fdinfo": "pos:\t0\nflags:\t02500002\nmnt_id:\t82\nino:\t294618\n",
+          "direction": "readwrite"
+        },
+        {
+          "fd": 6,
+          "target": "pipe:[1911]",
+          "fdinfo": "pos:\t0\nflags:\t02000001\nmnt_id:\t16\nino:\t1911\n",
+          "direction": "write"
+        },
+        {
+          "fd": 7,
+          "target": "pipe:[1912]",
+          "fdinfo": "pos:\t0\nflags:\t02004000\nmnt_id:\t16\nino:\t1912\n",
+          "direction": "read"
+        },
+        {
+          "fd": 9,
+          "target": "pipe:[1913]",
+          "fdinfo": "pos:\t0\nflags:\t02004000\nmnt_id:\t16\nino:\t1913\n",
+          "direction": "read"
+        },
+        {
+          "fd": 32,
+          "target": "/memfd:rcac-config (deleted)",
+          "fdinfo": "pos:\t353\nflags:\t02100002\nmnt_id:\t0\nino:\t2052\n",
+          "direction": "readwrite"
+        },
+        {
+          "fd": 33,
+          "target": "/memfd:rcac-config (deleted)",
+          "fdinfo": "pos:\t109\nflags:\t02100002\nmnt_id:\t0\nino:\t2053\n",
+          "direction": "readwrite"
+        },
+        {
+          "fd": 34,
+          "target": "/memfd:rcac-config (deleted)",
+          "fdinfo": "pos:\t5454\nflags:\t02100002\nmnt_id:\t0\nino:\t2054\n",
+          "direction": "readwrite"
+        },
+        {
+          "fd": 36,
+          "target": "pipe:[876]",
+          "fdinfo": "pos:\t0\nflags:\t02004000\nmnt_id:\t16\nino:\t876\n",
+          "direction": "read"
+        }
+      ]
+    },
+    "wrapper": {
+      "pid": 471,
+      "startTicks": 751,
+      "state": "S",
+      "ppid": 459,
+      "statRaw": "471 (bwrap) S 459 459 459 0 -1 4194560 89 0 1 0 0 0 0 0 20 0 1 0 751 3743744 510 18446744073709551615 106473911226368 106473911259981 140724481449088 0 0 0 65536 0 0 1 0 0 17 2 0 0 0 0 0 106473911286000 106473911288072 106474635964416 140724481456841 140724481458029 140724481458029 140724481458153 0\n",
+      "namespaces": {
+        "pid": "pid:[4026532221]",
+        "mnt": "mnt:[4026532219]",
+        "net": "net:[4026531833]",
+        "user": "user:[4026531837]",
+        "ipc": "ipc:[4026532208]",
+        "uts": "uts:[4026532220]",
+        "cgroup": "cgroup:[4026531835]"
+      },
+      "statusRaw": "Name:\tbwrap\nUmask:\t0002\nState:\tS (sleeping)\nTgid:\t471\nNgid:\t0\nPid:\t471\nPPid:\t459\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t4 20 24 25 27 29 30 44 46 116 1000 1001 \nNStgid:\t471\nNSpid:\t471\nNSpgid:\t459\nNSsid:\t459\nKthread:\t0\nVmPeak:\t    3656 kB\nVmSize:\t    3656 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t    2056 kB\nVmRSS:\t    2056 kB\nRssAnon:\t     144 kB\nRssFile:\t    1912 kB\nRssShmem:\t       0 kB\nVmData:\t     240 kB\nVmStk:\t     132 kB\nVmExe:\t      36 kB\nVmLib:\t    2344 kB\nVmPTE:\t      52 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t1/31727\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000010000\nSigIgn:\t0000000000000000\nSigCgt:\t0000000000000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t000001ffffffffff\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t0\nSeccomp_filters:\t0\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t3\nnonvoluntary_ctxt_switches:\t0\n",
+      "selectedStatus": {
+        "PPid": "459",
+        "Uid": "1000\t1000\t1000\t1000",
+        "Gid": "1000\t1000\t1000\t1000",
+        "NSpid": "471",
+        "CapInh": "0000000000000000",
+        "CapPrm": "0000000000000000",
+        "CapEff": "0000000000000000",
+        "CapBnd": "000001ffffffffff",
+        "CapAmb": "0000000000000000",
+        "NoNewPrivs": "1"
+      },
+      "uidMap": "         0          0 4294967295\n",
+      "gidMap": "         0          0 4294967295\n",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service\n",
+      "exe": "/usr/bin/bwrap",
+      "cmdline": "/usr/bin/bwrap\u0000--clearenv\u0000--setenv\u0000HOME\u0000/home/claude\u0000--setenv\u0000PATH\u0000/runtime/deps/usr/bin:/node/bin:/usr/bin:/bin\u0000--setenv\u0000LD_LIBRARY_PATH\u0000/runtime/deps/usr/lib/x86_64-linux-gnu\u0000--unshare-all\u0000--share-net\u0000--die-with-parent\u0000--new-session\u0000--ro-bind\u0000/usr\u0000/usr\u0000--ro-bind\u0000/bin\u0000/bin\u0000--ro-bind\u0000/lib\u0000/lib\u0000--ro-bind\u0000/lib64\u0000/lib64\u0000--dir\u0000/etc\u0000--dir\u0000/etc/alternatives\u0000--ro-bind\u0000/usr/bin/which.debianutils\u0000/etc/alternatives/which\u0000--proc\u0000/proc\u0000--dev\u0000/dev\u0000--tmpfs\u0000/tmp\u0000--tmpfs\u0000/work\u0000--dir\u0000/runtime\u0000--dir\u0000/opt\u0000--dir\u0000/home\u0000--dir\u0000/relay\u0000--ro-bind\u0000/home/fixture/.local/share/rcac-second-runtime-20260929/node_modules\u0000/runtime/node_modules\u0000--ro-bind\u0000/home/fixture/.local/share/rcac-second-runtime-20260929/deps\u0000/runtime/deps\u0000--ro-bind\u0000/home/fixture/.hermes/node\u0000/node\u0000--ro-bind-data\u000012\u0000/opt/srt.json\u0000--ro-bind-data\u000013\u0000/opt/mcp.json\u0000--ro-bind-data\u000014\u0000/opt/mcp-fifo.py\u0000--ro-bind\u0000/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/auth\u0000/home/claude\u0000--bind\u0000/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003-1.mcp\u0000/relay\u0000--chdir\u0000/work\u0000--ro-bind-data\u000010\u0000/opt/rcac-bootstrap.py\u0000--info-fd\u000011\u0000--\u0000/usr/bin/python3\u0000-I\u0000-S\u0000/opt/rcac-bootstrap.py\u0000",
+      "cwd": "/home/fixture",
+      "root": "/",
+      "fds": [
+        {
+          "fd": 0,
+          "target": "pipe:[1911]",
+          "fdinfo": "pos:\t0\nflags:\t00\nmnt_id:\t16\nino:\t1911\n",
+          "direction": "read"
+        },
+        {
+          "fd": 1,
+          "target": "pipe:[1912]",
+          "fdinfo": "pos:\t0\nflags:\t01\nmnt_id:\t16\nino:\t1912\n",
+          "direction": "write"
+        },
+        {
+          "fd": 2,
+          "target": "pipe:[1913]",
+          "fdinfo": "pos:\t0\nflags:\t01\nmnt_id:\t16\nino:\t1913\n",
+          "direction": "write"
+        },
+        {
+          "fd": 3,
+          "target": "anon_inode:[signalfd]",
+          "fdinfo": "pos:\t0\nflags:\t02004002\nmnt_id:\t17\nino:\t2060\nsigmask:\t0000000000010000\n",
+          "direction": "readwrite"
+        },
+        {
+          "fd": 4,
+          "target": "anon_inode:[eventfd]",
+          "fdinfo": "pos:\t0\nflags:\t02004002\nmnt_id:\t17\nino:\t2060\neventfd-count:                0\neventfd-id: 9\neventfd-semaphore: 0\n",
+          "direction": "readwrite"
+        }
+      ]
+    },
+    "outer": {
+      "pid": 472,
+      "startTicks": 751,
+      "state": "S",
+      "ppid": 471,
+      "statRaw": "472 (bwrap) S 471 472 472 0 -1 4194624 51 0 0 0 0 0 0 0 20 0 1 0 751 3743744 296 18446744073709551615 106473911226368 106473911259981 140724481449088 0 0 0 65536 0 0 1 0 0 17 0 0 0 0 0 0 106473911286000 106473911288072 106474635964416 140724481456841 140724481458029 140724481458029 140724481458153 0\n",
+      "namespaces": {
+        "pid": "pid:[4026532292]",
+        "mnt": "mnt:[4026532289]",
+        "net": "net:[4026531833]",
+        "user": "user:[4026532294]",
+        "ipc": "ipc:[4026532291]",
+        "uts": "uts:[4026532290]",
+        "cgroup": "cgroup:[4026532293]"
+      },
+      "statusRaw": "Name:\tbwrap\nUmask:\t0002\nState:\tS (sleeping)\nTgid:\t472\nNgid:\t0\nPid:\t472\nPPid:\t471\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t4 20 24 25 27 29 30 44 46 116 1000 1001 \nNStgid:\t472\t1\nNSpid:\t472\t1\nNSpgid:\t472\t1\nNSsid:\t472\t1\nKthread:\t0\nVmPeak:\t    3656 kB\nVmSize:\t    3656 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t    1392 kB\nVmRSS:\t    1392 kB\nRssAnon:\t     184 kB\nRssFile:\t    1208 kB\nRssShmem:\t       0 kB\nVmData:\t     240 kB\nVmStk:\t     132 kB\nVmExe:\t      36 kB\nVmLib:\t    2344 kB\nVmPTE:\t      52 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t0/31727\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000010000\nSigIgn:\t0000000000000000\nSigCgt:\t0000000000000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t0\nSeccomp_filters:\t0\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t4\nnonvoluntary_ctxt_switches:\t0\n",
+      "selectedStatus": {
+        "PPid": "471",
+        "Uid": "1000\t1000\t1000\t1000",
+        "Gid": "1000\t1000\t1000\t1000",
+        "NSpid": "472\t1",
+        "CapInh": "0000000000000000",
+        "CapPrm": "0000000000000000",
+        "CapEff": "0000000000000000",
+        "CapBnd": "0000000000000000",
+        "CapAmb": "0000000000000000",
+        "NoNewPrivs": "1"
+      },
+      "uidMap": "      1000       1000          1\n",
+      "gidMap": "      1000       1000          1\n",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service\n",
+      "exe": "/usr/bin/bwrap",
+      "cmdline": "/usr/bin/bwrap\u0000--clearenv\u0000--setenv\u0000HOME\u0000/home/claude\u0000--setenv\u0000PATH\u0000/runtime/deps/usr/bin:/node/bin:/usr/bin:/bin\u0000--setenv\u0000LD_LIBRARY_PATH\u0000/runtime/deps/usr/lib/x86_64-linux-gnu\u0000--unshare-all\u0000--share-net\u0000--die-with-parent\u0000--new-session\u0000--ro-bind\u0000/usr\u0000/usr\u0000--ro-bind\u0000/bin\u0000/bin\u0000--ro-bind\u0000/lib\u0000/lib\u0000--ro-bind\u0000/lib64\u0000/lib64\u0000--dir\u0000/etc\u0000--dir\u0000/etc/alternatives\u0000--ro-bind\u0000/usr/bin/which.debianutils\u0000/etc/alternatives/which\u0000--proc\u0000/proc\u0000--dev\u0000/dev\u0000--tmpfs\u0000/tmp\u0000--tmpfs\u0000/work\u0000--dir\u0000/runtime\u0000--dir\u0000/opt\u0000--dir\u0000/home\u0000--dir\u0000/relay\u0000--ro-bind\u0000/home/fixture/.local/share/rcac-second-runtime-20260929/node_modules\u0000/runtime/node_modules\u0000--ro-bind\u0000/home/fixture/.local/share/rcac-second-runtime-20260929/deps\u0000/runtime/deps\u0000--ro-bind\u0000/home/fixture/.hermes/node\u0000/node\u0000--ro-bind-data\u000012\u0000/opt/srt.json\u0000--ro-bind-data\u000013\u0000/opt/mcp.json\u0000--ro-bind-data\u000014\u0000/opt/mcp-fifo.py\u0000--ro-bind\u0000/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/auth\u0000/home/claude\u0000--bind\u0000/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003-1.mcp\u0000/relay\u0000--chdir\u0000/work\u0000--ro-bind-data\u000010\u0000/opt/rcac-bootstrap.py\u0000--info-fd\u000011\u0000--\u0000/usr/bin/python3\u0000-I\u0000-S\u0000/opt/rcac-bootstrap.py\u0000",
+      "cwd": "/work",
+      "root": "/",
+      "fds": [
+        {
+          "fd": 0,
+          "target": "pipe:[1911]",
+          "fdinfo": "pos:\t0\nflags:\t00\nmnt_id:\t16\nino:\t1911\n",
+          "direction": "read"
+        },
+        {
+          "fd": 1,
+          "target": "pipe:[1912]",
+          "fdinfo": "pos:\t0\nflags:\t01\nmnt_id:\t16\nino:\t1912\n",
+          "direction": "write"
+        },
+        {
+          "fd": 2,
+          "target": "pipe:[1913]",
+          "fdinfo": "pos:\t0\nflags:\t01\nmnt_id:\t16\nino:\t1913\n",
+          "direction": "write"
+        },
+        {
+          "fd": 4,
+          "target": "anon_inode:[eventfd]",
+          "fdinfo": "pos:\t0\nflags:\t02004002\nmnt_id:\t17\nino:\t2060\neventfd-count:                0\neventfd-id: 9\neventfd-semaphore: 0\n",
+          "direction": "readwrite"
+        }
+      ],
+      "mountinfoRaw": "663 606 0:89 /newroot / rw,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n664 663 8:48 /usr /usr ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n665 664 0:36 / /usr/lib/wsl/drivers ro,nosuid,nodev,noatime - 9p drivers ro,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8\n666 664 0:48 / /usr/lib/wsl/lib ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on\n667 664 0:31 / /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2 ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/modules,upperdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/work,uuid=on\n668 663 8:48 /usr/bin /bin ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n669 663 8:48 /usr/lib /lib ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n670 669 0:36 / /lib/wsl/drivers ro,nosuid,nodev,noatime - 9p drivers ro,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8\n671 669 0:48 / /lib/wsl/lib ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on\n672 669 0:31 / /lib/modules/6.18.33.2-microsoft-standard-WSL2 ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/modules,upperdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/work,uuid=on\n673 663 8:48 /usr/lib64 /lib64 ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n674 663 8:48 /usr/bin/which.debianutils /etc/alternatives/which ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n675 663 0:90 / /proc rw,nosuid,nodev,noexec,relatime - proc proc rw\n676 663 0:91 / /dev rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n677 676 0:6 /null /dev/null rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n678 676 0:6 /zero /dev/zero rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n679 676 0:6 /full /dev/full rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n680 676 0:6 /random /dev/random rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n681 676 0:6 /urandom /dev/urandom rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n682 676 0:6 /tty /dev/tty rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n683 676 0:92 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,mode=620,ptmxmode=666\n684 663 0:93 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n685 663 0:94 / /work rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n686 663 8:48 /home/fixture/.local/share/rcac-second-runtime-20260929/node_modules /runtime/node_modules ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n687 663 8:48 /home/fixture/.local/share/rcac-second-runtime-20260929/deps /runtime/deps ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n688 663 8:48 /home/fixture/.hermes/node /node ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n689 663 0:89 /bindfile8F1172//deleted /opt/srt.json ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n690 663 0:89 /bindfileaizGwy//deleted /opt/mcp.json ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n691 663 0:89 /bindfileHPTyDK//deleted /opt/mcp-fifo.py ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n692 663 8:48 /home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/auth /home/claude ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n693 663 8:48 /home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003-1.mcp /relay rw,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n694 663 0:89 /bindfile3jNTXs//deleted /opt/rcac-bootstrap.py ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n",
+      "mountinfoRawAfter": "663 606 0:89 /newroot / rw,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n664 663 8:48 /usr /usr ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n665 664 0:36 / /usr/lib/wsl/drivers ro,nosuid,nodev,noatime - 9p drivers ro,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8\n666 664 0:48 / /usr/lib/wsl/lib ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on\n667 664 0:31 / /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2 ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/modules,upperdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/work,uuid=on\n668 663 8:48 /usr/bin /bin ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n669 663 8:48 /usr/lib /lib ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n670 669 0:36 / /lib/wsl/drivers ro,nosuid,nodev,noatime - 9p drivers ro,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8\n671 669 0:48 / /lib/wsl/lib ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on\n672 669 0:31 / /lib/modules/6.18.33.2-microsoft-standard-WSL2 ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/modules,upperdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/work,uuid=on\n673 663 8:48 /usr/lib64 /lib64 ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n674 663 8:48 /usr/bin/which.debianutils /etc/alternatives/which ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n675 663 0:90 / /proc rw,nosuid,nodev,noexec,relatime - proc proc rw\n676 663 0:91 / /dev rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n677 676 0:6 /null /dev/null rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n678 676 0:6 /zero /dev/zero rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n679 676 0:6 /full /dev/full rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n680 676 0:6 /random /dev/random rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n681 676 0:6 /urandom /dev/urandom rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n682 676 0:6 /tty /dev/tty rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n683 676 0:92 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,mode=620,ptmxmode=666\n684 663 0:93 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n685 663 0:94 / /work rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n686 663 8:48 /home/fixture/.local/share/rcac-second-runtime-20260929/node_modules /runtime/node_modules ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n687 663 8:48 /home/fixture/.local/share/rcac-second-runtime-20260929/deps /runtime/deps ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n688 663 8:48 /home/fixture/.hermes/node /node ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n689 663 0:89 /bindfile8F1172//deleted /opt/srt.json ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n690 663 0:89 /bindfileaizGwy//deleted /opt/mcp.json ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n691 663 0:89 /bindfileHPTyDK//deleted /opt/mcp-fifo.py ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n692 663 8:48 /home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/auth /home/claude ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n693 663 8:48 /home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003-1.mcp /relay rw,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n694 663 0:89 /bindfile3jNTXs//deleted /opt/rcac-bootstrap.py ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n"
+    },
+    "bootstrap": {
+      "pid": 473,
+      "startTicks": 751,
+      "state": "S",
+      "ppid": 472,
+      "statRaw": "473 (python3) S 472 472 472 0 -1 4194304 1311 0 0 0 0 0 0 0 20 0 1 0 751 20373504 3289 18446744073709551615 96647880179712 96647883019789 140730436813616 0 0 0 0 16781312 2 1 0 0 17 1 0 0 0 0 0 96647885391920 96647885675992 96648851537920 140730436816691 140730436816737 140730436816737 140730436816871 0\n",
+      "namespaces": {
+        "pid": "pid:[4026532292]",
+        "mnt": "mnt:[4026532289]",
+        "net": "net:[4026531833]",
+        "user": "user:[4026532294]",
+        "ipc": "ipc:[4026532291]",
+        "uts": "uts:[4026532290]",
+        "cgroup": "cgroup:[4026532293]"
+      },
+      "statusRaw": "Name:\tpython3\nUmask:\t0002\nState:\tS (sleeping)\nTgid:\t473\nNgid:\t0\nPid:\t473\nPPid:\t472\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t4 20 24 25 27 29 30 44 46 116 1000 1001 \nNStgid:\t473\t2\nNSpid:\t473\t2\nNSpgid:\t472\t1\nNSsid:\t472\t1\nKthread:\t0\nVmPeak:\t   19896 kB\nVmSize:\t   19896 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t   13260 kB\nVmRSS:\t   13260 kB\nRssAnon:\t    4520 kB\nRssFile:\t    8740 kB\nRssShmem:\t       0 kB\nVmData:\t    5748 kB\nVmStk:\t     132 kB\nVmExe:\t    2776 kB\nVmLib:\t    4968 kB\nVmPTE:\t      88 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t0/31727\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000001001000\nSigCgt:\t0000000000000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t0\nSeccomp_filters:\t0\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t7\nnonvoluntary_ctxt_switches:\t0\n",
+      "selectedStatus": {
+        "PPid": "472",
+        "Uid": "1000\t1000\t1000\t1000",
+        "Gid": "1000\t1000\t1000\t1000",
+        "NSpid": "473\t2",
+        "CapInh": "0000000000000000",
+        "CapPrm": "0000000000000000",
+        "CapEff": "0000000000000000",
+        "CapBnd": "0000000000000000",
+        "CapAmb": "0000000000000000",
+        "NoNewPrivs": "1"
+      },
+      "uidMap": "      1000       1000          1\n",
+      "gidMap": "      1000       1000          1\n",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/rcac-investigator-00000000-0000-4000-8000-000000000003.service\n",
+      "exe": "/usr/bin/python3.10",
+      "cmdline": "/usr/bin/python3\u0000-I\u0000-S\u0000/opt/rcac-bootstrap.py\u0000",
+      "cwd": "/work",
+      "root": "/",
+      "fds": [
+        {
+          "fd": 0,
+          "target": "pipe:[1911]",
+          "fdinfo": "pos:\t0\nflags:\t00\nmnt_id:\t16\nino:\t1911\n",
+          "direction": "read"
+        },
+        {
+          "fd": 1,
+          "target": "pipe:[1912]",
+          "fdinfo": "pos:\t0\nflags:\t01\nmnt_id:\t16\nino:\t1912\n",
+          "direction": "write"
+        },
+        {
+          "fd": 2,
+          "target": "pipe:[1913]",
+          "fdinfo": "pos:\t0\nflags:\t01\nmnt_id:\t16\nino:\t1913\n",
+          "direction": "write"
+        }
+      ],
+      "mountinfoRaw": "663 606 0:89 /newroot / rw,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n664 663 8:48 /usr /usr ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n665 664 0:36 / /usr/lib/wsl/drivers ro,nosuid,nodev,noatime - 9p drivers ro,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8\n666 664 0:48 / /usr/lib/wsl/lib ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on\n667 664 0:31 / /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2 ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/modules,upperdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/work,uuid=on\n668 663 8:48 /usr/bin /bin ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n669 663 8:48 /usr/lib /lib ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n670 669 0:36 / /lib/wsl/drivers ro,nosuid,nodev,noatime - 9p drivers ro,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8\n671 669 0:48 / /lib/wsl/lib ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on\n672 669 0:31 / /lib/modules/6.18.33.2-microsoft-standard-WSL2 ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/modules,upperdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/work,uuid=on\n673 663 8:48 /usr/lib64 /lib64 ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n674 663 8:48 /usr/bin/which.debianutils /etc/alternatives/which ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n675 663 0:90 / /proc rw,nosuid,nodev,noexec,relatime - proc proc rw\n676 663 0:91 / /dev rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n677 676 0:6 /null /dev/null rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n678 676 0:6 /zero /dev/zero rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n679 676 0:6 /full /dev/full rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n680 676 0:6 /random /dev/random rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n681 676 0:6 /urandom /dev/urandom rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n682 676 0:6 /tty /dev/tty rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n683 676 0:92 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,mode=620,ptmxmode=666\n684 663 0:93 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n685 663 0:94 / /work rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n686 663 8:48 /home/fixture/.local/share/rcac-second-runtime-20260929/node_modules /runtime/node_modules ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n687 663 8:48 /home/fixture/.local/share/rcac-second-runtime-20260929/deps /runtime/deps ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n688 663 8:48 /home/fixture/.hermes/node /node ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n689 663 0:89 /bindfile8F1172//deleted /opt/srt.json ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n690 663 0:89 /bindfileaizGwy//deleted /opt/mcp.json ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n691 663 0:89 /bindfileHPTyDK//deleted /opt/mcp-fifo.py ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n692 663 8:48 /home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/auth /home/claude ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n693 663 8:48 /home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003-1.mcp /relay rw,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n694 663 0:89 /bindfile3jNTXs//deleted /opt/rcac-bootstrap.py ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n",
+      "mountinfoRawAfter": "663 606 0:89 /newroot / rw,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n664 663 8:48 /usr /usr ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n665 664 0:36 / /usr/lib/wsl/drivers ro,nosuid,nodev,noatime - 9p drivers ro,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8\n666 664 0:48 / /usr/lib/wsl/lib ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on\n667 664 0:31 / /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2 ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/modules,upperdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/work,uuid=on\n668 663 8:48 /usr/bin /bin ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n669 663 8:48 /usr/lib /lib ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n670 669 0:36 / /lib/wsl/drivers ro,nosuid,nodev,noatime - 9p drivers ro,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8\n671 669 0:48 / /lib/wsl/lib ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on\n672 669 0:31 / /lib/modules/6.18.33.2-microsoft-standard-WSL2 ro,nosuid,nodev,noatime - overlay none rw,lowerdir=/modules,upperdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/work,uuid=on\n673 663 8:48 /usr/lib64 /lib64 ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n674 663 8:48 /usr/bin/which.debianutils /etc/alternatives/which ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n675 663 0:90 / /proc rw,nosuid,nodev,noexec,relatime - proc proc rw\n676 663 0:91 / /dev rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n677 676 0:6 /null /dev/null rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n678 676 0:6 /zero /dev/zero rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n679 676 0:6 /full /dev/full rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n680 676 0:6 /random /dev/random rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n681 676 0:6 /urandom /dev/urandom rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n682 676 0:6 /tty /dev/tty rw,nosuid,relatime master:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n683 676 0:92 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,mode=620,ptmxmode=666\n684 663 0:93 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n685 663 0:94 / /work rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\n686 663 8:48 /home/fixture/.local/share/rcac-second-runtime-20260929/node_modules /runtime/node_modules ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n687 663 8:48 /home/fixture/.local/share/rcac-second-runtime-20260929/deps /runtime/deps ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n688 663 8:48 /home/fixture/.hermes/node /node ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n689 663 0:89 /bindfile8F1172//deleted /opt/srt.json ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n690 663 0:89 /bindfileaizGwy//deleted /opt/mcp.json ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n691 663 0:89 /bindfileHPTyDK//deleted /opt/mcp-fifo.py ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n692 663 8:48 /home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/auth /home/claude ro,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n693 663 8:48 /home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003-1.mcp /relay rw,nosuid,nodev,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n694 663 0:89 /bindfile3jNTXs//deleted /opt/rcac-bootstrap.py ro,nosuid,nodev,relatime - tmpfs tmpfs rw,uid=1000,gid=1000\n"
+    }
+  },
+  "hostMountinfoRaw": "77 82 0:31 / /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2 rw,nosuid,nodev,noatime - overlay none rw,lowerdir=/modules,upperdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/work,uuid=on\n78 82 0:34 / /mnt/wsl rw,relatime shared:1 - tmpfs none rw\n79 82 0:36 / /usr/lib/wsl/drivers ro,nosuid,nodev,noatime - 9p drivers ro,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8\n82 67 8:48 / / rw,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n83 82 0:40 / /mnt/wslg rw,relatime shared:2 - tmpfs none rw\n84 83 8:48 / /mnt/wslg/distro ro,relatime shared:3 - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n99 82 0:48 / /usr/lib/wsl/lib rw,nosuid,nodev,noatime - overlay none rw,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on\n105 82 0:2 /init /init ro - rootfs rootfs rw,size=4060856k,nr_inodes=1015214\n111 82 0:6 / /dev rw,nosuid,relatime shared:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n112 82 0:24 / /sys rw,nosuid,nodev,noexec,noatime shared:14 - sysfs sysfs rw\n113 82 0:61 / /proc rw,nosuid,nodev,noexec,noatime shared:15 - proc proc rw\n114 111 0:62 / /dev/pts rw,nosuid,noexec,noatime shared:16 - devpts devpts rw,gid=5,mode=620,ptmxmode=000\n116 82 0:63 / /run rw,nosuid,nodev shared:18 - tmpfs none rw,mode=755\n117 116 0:64 / /run/lock rw,nosuid,nodev,noexec,noatime shared:19 - tmpfs none rw\n118 116 0:65 / /run/shm rw,nosuid,nodev,noatime shared:20 - tmpfs none rw\n119 111 0:65 / /dev/shm rw,nosuid,nodev,noatime shared:20 - tmpfs none rw\n120 116 0:66 / /run/user rw,nosuid,nodev,noexec,noatime shared:21 - tmpfs none rw,mode=755\n121 113 0:35 / /proc/sys/fs/binfmt_misc rw,relatime shared:22 - binfmt_misc binfmt_misc rw\n122 112 0:25 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime shared:23 - cgroup2 cgroup2 rw,nsdelegate\n127 83 0:42 /etc/versions.txt /mnt/wslg/versions.txt rw,relatime shared:24 - overlay none rw,lowerdir=/systemvhd,upperdir=/system/rw/upper,workdir=/system/rw/work,uuid=on\n129 83 0:42 /usr/share/doc /mnt/wslg/doc rw,relatime shared:25 - overlay none rw,lowerdir=/systemvhd,upperdir=/system/rw/upper,workdir=/system/rw/work,uuid=on\n131 82 0:40 /.X11-unix /tmp/.X11-unix ro,relatime shared:2 - tmpfs none rw\n132 82 0:70 / /mnt/c rw,noatime - 9p C:\\134 rw,aname=drvfs;path=C:\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=6,wfd=6\n133 82 0:71 / /mnt/d rw,noatime - 9p D:\\134 rw,aname=drvfs;path=D:\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=6,wfd=6\n134 120 0:40 /run/user /run/user rw,relatime shared:2 - tmpfs none rw\n135 111 0:72 / /dev/hugepages rw,relatime shared:26 - hugetlbfs hugetlbfs rw,pagesize=2M\n136 111 0:39 / /dev/mqueue rw,nosuid,nodev,noexec,relatime shared:27 - mqueue mqueue rw\n137 112 0:8 / /sys/kernel/debug rw,nosuid,nodev,noexec,relatime shared:28 - debugfs debugfs rw\n138 112 0:13 / /sys/kernel/tracing rw,nosuid,nodev,noexec,relatime shared:29 - tracefs tracefs rw\n139 112 0:73 / /sys/fs/fuse/connections rw,nosuid,nodev,noexec,relatime shared:30 - fusectl fusectl rw\n140 82 8:48 /snap /snap rw,relatime shared:31 - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n222 140 0:74 / /snap/bare/5 ro,nodev,relatime shared:54 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n225 140 0:75 / /snap/core20/2866 ro,nodev,relatime shared:68 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n228 140 0:76 / /snap/core22/2411 ro,nodev,relatime shared:70 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n231 140 0:77 / /snap/core20/2922 ro,nodev,relatime shared:72 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n234 140 0:78 / /snap/gtk-common-themes/1535 ro,nodev,relatime shared:74 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n237 140 0:79 / /snap/snapd/27710 ro,nodev,relatime shared:76 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n240 140 0:80 / /snap/snapd/27738 ro,nodev,relatime shared:78 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n243 140 0:81 / /snap/ubuntu-desktop-installer/1286 ro,nodev,relatime shared:80 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n246 140 0:82 / /snap/ubuntu-desktop-installer/771 ro,nodev,relatime shared:82 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n473 134 0:86 / /run/user/1000 rw,nosuid,nodev,relatime shared:159 - tmpfs tmpfs rw,size=813320k,nr_inodes=203330,mode=700,uid=1000,gid=1000\n475 83 0:86 / /mnt/wslg/run/user/1000 rw,nosuid,nodev,relatime shared:159 - tmpfs tmpfs rw,size=813320k,nr_inodes=203330,mode=700,uid=1000,gid=1000\n",
+  "hostMountinfoRawAfter": "77 82 0:31 / /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2 rw,nosuid,nodev,noatime - overlay none rw,lowerdir=/modules,upperdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.33.2-microsoft-standard-WSL2/rw/work,uuid=on\n78 82 0:34 / /mnt/wsl rw,relatime shared:1 - tmpfs none rw\n79 82 0:36 / /usr/lib/wsl/drivers ro,nosuid,nodev,noatime - 9p drivers ro,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8\n82 67 8:48 / / rw,relatime - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n83 82 0:40 / /mnt/wslg rw,relatime shared:2 - tmpfs none rw\n84 83 8:48 / /mnt/wslg/distro ro,relatime shared:3 - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n99 82 0:48 / /usr/lib/wsl/lib rw,nosuid,nodev,noatime - overlay none rw,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on\n105 82 0:2 /init /init ro - rootfs rootfs rw,size=4060856k,nr_inodes=1015214\n111 82 0:6 / /dev rw,nosuid,relatime shared:13 - devtmpfs none rw,size=4060856k,nr_inodes=1015214,mode=755\n112 82 0:24 / /sys rw,nosuid,nodev,noexec,noatime shared:14 - sysfs sysfs rw\n113 82 0:61 / /proc rw,nosuid,nodev,noexec,noatime shared:15 - proc proc rw\n114 111 0:62 / /dev/pts rw,nosuid,noexec,noatime shared:16 - devpts devpts rw,gid=5,mode=620,ptmxmode=000\n116 82 0:63 / /run rw,nosuid,nodev shared:18 - tmpfs none rw,mode=755\n117 116 0:64 / /run/lock rw,nosuid,nodev,noexec,noatime shared:19 - tmpfs none rw\n118 116 0:65 / /run/shm rw,nosuid,nodev,noatime shared:20 - tmpfs none rw\n119 111 0:65 / /dev/shm rw,nosuid,nodev,noatime shared:20 - tmpfs none rw\n120 116 0:66 / /run/user rw,nosuid,nodev,noexec,noatime shared:21 - tmpfs none rw,mode=755\n121 113 0:35 / /proc/sys/fs/binfmt_misc rw,relatime shared:22 - binfmt_misc binfmt_misc rw\n122 112 0:25 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime shared:23 - cgroup2 cgroup2 rw,nsdelegate\n127 83 0:42 /etc/versions.txt /mnt/wslg/versions.txt rw,relatime shared:24 - overlay none rw,lowerdir=/systemvhd,upperdir=/system/rw/upper,workdir=/system/rw/work,uuid=on\n129 83 0:42 /usr/share/doc /mnt/wslg/doc rw,relatime shared:25 - overlay none rw,lowerdir=/systemvhd,upperdir=/system/rw/upper,workdir=/system/rw/work,uuid=on\n131 82 0:40 /.X11-unix /tmp/.X11-unix ro,relatime shared:2 - tmpfs none rw\n132 82 0:70 / /mnt/c rw,noatime - 9p C:\\134 rw,aname=drvfs;path=C:\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=6,wfd=6\n133 82 0:71 / /mnt/d rw,noatime - 9p D:\\134 rw,aname=drvfs;path=D:\\;uid=1000;gid=1000;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=6,wfd=6\n134 120 0:40 /run/user /run/user rw,relatime shared:2 - tmpfs none rw\n135 111 0:72 / /dev/hugepages rw,relatime shared:26 - hugetlbfs hugetlbfs rw,pagesize=2M\n136 111 0:39 / /dev/mqueue rw,nosuid,nodev,noexec,relatime shared:27 - mqueue mqueue rw\n137 112 0:8 / /sys/kernel/debug rw,nosuid,nodev,noexec,relatime shared:28 - debugfs debugfs rw\n138 112 0:13 / /sys/kernel/tracing rw,nosuid,nodev,noexec,relatime shared:29 - tracefs tracefs rw\n139 112 0:73 / /sys/fs/fuse/connections rw,nosuid,nodev,noexec,relatime shared:30 - fusectl fusectl rw\n140 82 8:48 /snap /snap rw,relatime shared:31 - ext4 /dev/sdd rw,discard,errors=remount-ro,data=ordered\n222 140 0:74 / /snap/bare/5 ro,nodev,relatime shared:54 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n225 140 0:75 / /snap/core20/2866 ro,nodev,relatime shared:68 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n228 140 0:76 / /snap/core22/2411 ro,nodev,relatime shared:70 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n231 140 0:77 / /snap/core20/2922 ro,nodev,relatime shared:72 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n234 140 0:78 / /snap/gtk-common-themes/1535 ro,nodev,relatime shared:74 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n237 140 0:79 / /snap/snapd/27710 ro,nodev,relatime shared:76 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n240 140 0:80 / /snap/snapd/27738 ro,nodev,relatime shared:78 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n243 140 0:81 / /snap/ubuntu-desktop-installer/1286 ro,nodev,relatime shared:80 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n246 140 0:82 / /snap/ubuntu-desktop-installer/771 ro,nodev,relatime shared:82 - fuse.snapfuse snapfuse ro,user_id=0,group_id=0,allow_other\n473 134 0:86 / /run/user/1000 rw,nosuid,nodev,relatime shared:159 - tmpfs tmpfs rw,size=813320k,nr_inodes=203330,mode=700,uid=1000,gid=1000\n475 83 0:86 / /mnt/wslg/run/user/1000 rw,nosuid,nodev,relatime shared:159 - tmpfs tmpfs rw,size=813320k,nr_inodes=203330,mode=700,uid=1000,gid=1000\n",
+  "backingPaths": [
+    {
+      "source": "/usr",
+      "target": "/usr",
+      "realpath": "/usr",
+      "host": {
+        "dev": 2096,
+        "ino": 65537,
+        "mode": 16877
+      },
+      "sandbox": {
+        "dev": 2096,
+        "ino": 65537,
+        "mode": 16877
+      }
+    },
+    {
+      "source": "/bin",
+      "target": "/bin",
+      "realpath": "/usr/bin",
+      "host": {
+        "dev": 2096,
+        "ino": 1213,
+        "mode": 16877
+      },
+      "sandbox": {
+        "dev": 2096,
+        "ino": 1213,
+        "mode": 16877
+      }
+    },
+    {
+      "source": "/lib",
+      "target": "/lib",
+      "realpath": "/usr/lib",
+      "host": {
+        "dev": 2096,
+        "ino": 1998,
+        "mode": 16877
+      },
+      "sandbox": {
+        "dev": 2096,
+        "ino": 1998,
+        "mode": 16877
+      }
+    },
+    {
+      "source": "/lib64",
+      "target": "/lib64",
+      "realpath": "/usr/lib64",
+      "host": {
+        "dev": 2096,
+        "ino": 8347,
+        "mode": 16877
+      },
+      "sandbox": {
+        "dev": 2096,
+        "ino": 8347,
+        "mode": 16877
+      }
+    },
+    {
+      "source": "/usr/bin/which.debianutils",
+      "target": "/etc/alternatives/which",
+      "realpath": "/usr/bin/which.debianutils",
+      "host": {
+        "dev": 2096,
+        "ino": 1936,
+        "mode": 33261
+      },
+      "sandbox": {
+        "dev": 2096,
+        "ino": 1936,
+        "mode": 33261
+      }
+    },
+    {
+      "source": "/home/fixture/.local/share/rcac-second-runtime-20260929/node_modules",
+      "target": "/runtime/node_modules",
+      "realpath": "/home/fixture/.local/share/rcac-second-runtime-20260929/node_modules",
+      "host": {
+        "dev": 2096,
+        "ino": 258758,
+        "mode": 16832
+      },
+      "sandbox": {
+        "dev": 2096,
+        "ino": 258758,
+        "mode": 16832
+      }
+    },
+    {
+      "source": "/home/fixture/.local/share/rcac-second-runtime-20260929/deps",
+      "target": "/runtime/deps",
+      "realpath": "/home/fixture/.local/share/rcac-second-runtime-20260929/deps",
+      "host": {
+        "dev": 2096,
+        "ino": 267787,
+        "mode": 16877
+      },
+      "sandbox": {
+        "dev": 2096,
+        "ino": 267787,
+        "mode": 16877
+      }
+    },
+    {
+      "source": "/home/fixture/.hermes/node",
+      "target": "/node",
+      "realpath": "/home/fixture/.hermes/node",
+      "host": {
+        "dev": 2096,
+        "ino": 85785,
+        "mode": 16877
+      },
+      "sandbox": {
+        "dev": 2096,
+        "ino": 85785,
+        "mode": 16877
+      }
+    },
+    {
+      "source": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/auth",
+      "target": "/home/claude",
+      "realpath": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/auth",
+      "host": {
+        "dev": 2096,
+        "ino": 294610,
+        "mode": 16832
+      },
+      "sandbox": {
+        "dev": 2096,
+        "ino": 294610,
+        "mode": 16832
+      }
+    },
+    {
+      "source": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003-1.mcp",
+      "target": "/relay",
+      "realpath": "/home/fixture/.local/rcac-outer-collector-00000000-0000-4000-8000-000000000003/attempt_00000000-0000-4000-8000-000000000003-1.mcp",
+      "host": {
+        "dev": 2096,
+        "ino": 294611,
+        "mode": 16832
+      },
+      "sandbox": {
+        "dev": 2096,
+        "ino": 294611,
+        "mode": 16832
+      }
+    },
+    {
+      "source": "/usr/lib/modules/6.18.33.2-microsoft-standard-WSL2",
+      "target": "/usr/lib/modules/6.18.33.2-microsoft-standard-WSL2",
+      "realpath": "/usr/lib/modules/6.18.33.2-microsoft-standard-WSL2",
+      "host": {
+        "dev": 31,
+        "ino": 2,
+        "mode": 16877
+      },
+      "sandbox": {
+        "dev": 31,
+        "ino": 2,
+        "mode": 16877
+      }
+    },
+    {
+      "source": "/usr/lib/wsl/drivers",
+      "target": "/usr/lib/wsl/drivers",
+      "realpath": "/usr/lib/wsl/drivers",
+      "host": {
+        "dev": 36,
+        "ino": 562949954788461,
+        "mode": 16749
+      },
+      "sandbox": {
+        "dev": 36,
+        "ino": 562949954788461,
+        "mode": 16749
+      }
+    },
+    {
+      "source": "/usr/lib/wsl/lib",
+      "target": "/usr/lib/wsl/lib",
+      "realpath": "/usr/lib/wsl/lib",
+      "host": {
+        "dev": 48,
+        "ino": 2,
+        "mode": 16877
+      },
+      "sandbox": {
+        "dev": 48,
+        "ino": 2,
+        "mode": 16877
+      }
+    },
+    {
+      "source": "/usr/lib/modules/6.18.33.2-microsoft-standard-WSL2",
+      "target": "/lib/modules/6.18.33.2-microsoft-standard-WSL2",
+      "realpath": "/usr/lib/modules/6.18.33.2-microsoft-standard-WSL2",
+      "host": {
+        "dev": 31,
+        "ino": 2,
+        "mode": 16877
+      },
+      "sandbox": {
+        "dev": 31,
+        "ino": 2,
+        "mode": 16877
+      }
+    },
+    {
+      "source": "/usr/lib/wsl/drivers",
+      "target": "/lib/wsl/drivers",
+      "realpath": "/usr/lib/wsl/drivers",
+      "host": {
+        "dev": 36,
+        "ino": 562949954788461,
+        "mode": 16749
+      },
+      "sandbox": {
+        "dev": 36,
+        "ino": 562949954788461,
+        "mode": 16749
+      }
+    },
+    {
+      "source": "/usr/lib/wsl/lib",
+      "target": "/lib/wsl/lib",
+      "realpath": "/usr/lib/wsl/lib",
+      "host": {
+        "dev": 48,
+        "ino": 2,
+        "mode": 16877
+      },
+      "sandbox": {
+        "dev": 48,
+        "ino": 2,
+        "mode": 16877
+      }
+    }
+  ],
+  "mountedFixedFiles": [
+    {
+      "target": "/opt/srt.json",
+      "byteLength": 353,
+      "sha256": "94cfed7ac40ddc57f806fcf260a715912644b6a17ff1a0c9defede9398578463",
+      "stat": {
+        "dev": 89,
+        "ino": 22,
+        "mode": 33152,
+        "uid": 1000,
+        "gid": 1000,
+        "nlink": 0,
+        "size": 353
+      }
+    },
+    {
+      "target": "/opt/mcp.json",
+      "byteLength": 109,
+      "sha256": "a91152afdde8478f1af0186713e91ad5040dbb9a54ffb3ea1c4da1e19e0f668b",
+      "stat": {
+        "dev": 89,
+        "ino": 24,
+        "mode": 33152,
+        "uid": 1000,
+        "gid": 1000,
+        "nlink": 0,
+        "size": 109
+      }
+    },
+    {
+      "target": "/opt/mcp-fifo.py",
+      "byteLength": 5454,
+      "sha256": "6c58227d83769c05c948a15f64c4cb415259e41909db4890ddfba93e0f13a367",
+      "stat": {
+        "dev": 89,
+        "ino": 26,
+        "mode": 33152,
+        "uid": 1000,
+        "gid": 1000,
+        "nlink": 0,
+        "size": 5454
+      }
+    },
+    {
+      "target": "/opt/rcac-bootstrap.py",
+      "byteLength": 4295,
+      "sha256": "64f7fd88cbeef270f5bc25d2c26774f22928a19a26a78d859a37d3fa6f84ba9f",
+      "stat": {
+        "dev": 89,
+        "ino": 29,
+        "mode": 33152,
+        "uid": 1000,
+        "gid": 1000,
+        "nlink": 0,
+        "size": 4295
+      }
+    }
+  ]
+}

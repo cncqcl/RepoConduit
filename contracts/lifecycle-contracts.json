@@ -1,0 +1,202 @@
+{
+  "schema_version": "0.2",
+  "state_machines": {
+    "collaboration": {
+      "states": [
+        "open",
+        "paused",
+        "archived"
+      ],
+      "transitions": {
+        "open": [
+          "paused",
+          "archived"
+        ],
+        "paused": [
+          "open",
+          "archived"
+        ],
+        "archived": []
+      }
+    },
+    "session_control": {
+      "states": [
+        "host_controlled",
+        "human_controlled",
+        "syncing",
+        "reconcile_required"
+      ],
+      "transitions": {
+        "host_controlled": [
+          "human_controlled",
+          "syncing",
+          "reconcile_required"
+        ],
+        "human_controlled": [
+          "syncing"
+        ],
+        "syncing": [
+          "host_controlled",
+          "human_controlled",
+          "reconcile_required"
+        ],
+        "reconcile_required": [
+          "syncing",
+          "human_controlled"
+        ]
+      }
+    },
+    "exchange": {
+      "states": [
+        "prepared",
+        "sending",
+        "awaiting_result",
+        "completed",
+        "failed",
+        "cancelled",
+        "reconcile_required"
+      ],
+      "transitions": {
+        "prepared": [
+          "sending",
+          "cancelled",
+          "failed"
+        ],
+        "sending": [
+          "awaiting_result",
+          "reconcile_required",
+          "failed"
+        ],
+        "awaiting_result": [
+          "completed",
+          "failed",
+          "cancelled",
+          "reconcile_required"
+        ],
+        "reconcile_required": [
+          "awaiting_result",
+          "completed",
+          "failed",
+          "cancelled"
+        ],
+        "completed": [],
+        "failed": [],
+        "cancelled": []
+      }
+    },
+    "investigation": {
+      "states": [
+        "queued",
+        "awaiting_authorization",
+        "running",
+        "awaiting_input",
+        "cancel_requested",
+        "completed",
+        "failed",
+        "cancelled",
+        "recovery_required"
+      ],
+      "transitions": {
+        "queued": [
+          "awaiting_authorization",
+          "running",
+          "cancelled",
+          "failed"
+        ],
+        "awaiting_authorization": [
+          "queued",
+          "cancelled",
+          "failed"
+        ],
+        "running": [
+          "awaiting_input",
+          "cancel_requested",
+          "completed",
+          "failed",
+          "recovery_required"
+        ],
+        "awaiting_input": [
+          "running",
+          "cancel_requested",
+          "recovery_required"
+        ],
+        "cancel_requested": [
+          "cancelled",
+          "completed",
+          "failed",
+          "recovery_required"
+        ],
+        "recovery_required": [
+          "running",
+          "awaiting_input",
+          "cancel_requested",
+          "completed",
+          "failed",
+          "cancelled"
+        ],
+        "completed": [],
+        "failed": [],
+        "cancelled": []
+      }
+    },
+    "bundle": {
+      "states": [
+        "staging",
+        "verifying",
+        "published",
+        "rejected",
+        "aborted"
+      ],
+      "transitions": {
+        "staging": [
+          "verifying",
+          "rejected",
+          "aborted"
+        ],
+        "verifying": [
+          "published",
+          "staging",
+          "rejected",
+          "aborted"
+        ],
+        "published": [],
+        "rejected": [],
+        "aborted": []
+      }
+    },
+    "decision": {
+      "states": [
+        "proposed",
+        "accepted",
+        "partially_accepted",
+        "rejected",
+        "superseded"
+      ],
+      "transitions": {
+        "proposed": [
+          "accepted",
+          "partially_accepted",
+          "rejected"
+        ],
+        "accepted": [
+          "superseded"
+        ],
+        "partially_accepted": [
+          "superseded"
+        ],
+        "rejected": [
+          "superseded"
+        ],
+        "superseded": []
+      }
+    }
+  },
+  "guards": [
+    "Every transition requires current authority, expected revision, and applicable fencing epoch. A narrowly scoped internal recovery actor may reconcile or terminate an already-authorized job after external grant revocation; it may not authorize new dispatch or disclose results.",
+    "Unknown remote sends never return to prepared without proven non-submission and an explicit new authorized attempt.",
+    "cancelled for an active job requires native termination confirmation; a completion-before-cancel race may remain completed with its evidence.",
+    "Published bundles and terminal attempts are immutable; retries create linked attempts/versions, not overwritten histories.",
+    "Recovery transitions require native-state evidence, not inferred success.",
+    "Proposal acceptance never confers source-write or implementation authorization."
+  ]
+}

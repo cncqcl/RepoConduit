@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Repo Agent Collaboration execution evidence record v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "run_id",
+    "layer",
+    "status",
+    "source_commit",
+    "started_at",
+    "finished_at",
+    "executor",
+    "observations",
+    "evidence_refs",
+    "blockers"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.2"
+    },
+    "case_id": {
+      "type": "string",
+      "enum": [
+        "AC01", "AC02", "AC03", "AC04", "AC05", "AC06", "AC07",
+        "AC08", "AC09", "AC10", "AC11", "AC12", "AC13", "AC14",
+        "LIVE01", "LIVE02", "LIVE03", "NEUTRAL01", "PACKAGE01",
+        "stage:core_verified", "stage:flagship_live_verified", "stage:release_ready",
+        "offline:typecheck", "offline:lint", "offline:test", "offline:test:contracts",
+        "offline:test:integration", "offline:test:faults", "offline:test:security",
+        "offline:test:boundary", "offline:test:e2e:mock", "offline:build", "offline:package:smoke",
+        "release:license_review", "release:secret_scan", "release:safety_defects",
+        "release:capability_report", "release:model_loading"
+      ]
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "attempt_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "layer": {
+      "enum": [
+        "contracts",
+        "unit",
+        "integration",
+        "security",
+        "faults",
+        "boundary",
+        "mock_e2e",
+        "live",
+        "live_human",
+        "live_runtime",
+        "real_second_runtime",
+        "package_smoke",
+        "offline_command",
+        "review"
+      ]
+    },
+    "status": {
+      "enum": [
+        "not_run",
+        "running",
+        "passed",
+        "failed",
+        "blocked",
+        "skipped",
+        "recovery_required"
+      ]
+    },
+    "source_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "build_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "started_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "finished_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "executor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "command": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cwd": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "exit_code": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "runtime_versions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "route": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "package_smoke_output_ref": { "type": "string", "minLength": 1 },
+    "package_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["archive_ref", "sha256", "integrity"],
+      "properties": {
+        "archive_ref": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "integrity": { "type": "string", "pattern": "^sha512-[A-Za-z0-9+/]{86}==$" }
+      }
+    },
+    "bundle_deliveries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "manifest_ref", "manifest_hash", "file_refs"],
+        "properties": {
+          "role": { "enum": ["v1", "v2", "independent"] },
+          "manifest_ref": { "type": "string", "pattern": "^verification/live/" },
+          "manifest_hash": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "file_refs": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["normalized_relative_path", "evidence_ref"],
+              "properties": {
+                "normalized_relative_path": { "type": "string", "minLength": 1 },
+                "evidence_ref": { "type": "string", "pattern": "^verification/live/" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "actual_human_performed": {
+      "type": "boolean"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assertion",
+          "observed",
+          "evidence_refs"
+        ],
+        "properties": {
+          "assertion": {
+            "type": "string"
+          },
+          "observed": {
+            "type": "string"
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "case_id": { "enum": ["AC01", "AC02", "AC03", "AC04", "AC05", "AC06", "AC07", "AC08", "AC09", "AC10", "AC11", "AC12", "AC13", "AC14"] },
+        "layer": { "enum": ["contracts", "unit", "integration", "security", "faults", "boundary", "mock_e2e", "live", "live_human", "live_runtime", "real_second_runtime", "package_smoke"] }
+      }
+    },
+    {
+      "properties": { "case_id": { "enum": ["LIVE01", "LIVE02", "LIVE03"] }, "layer": { "const": "live" } }
+    },
+    {
+      "properties": { "case_id": { "enum": ["NEUTRAL01"] }, "layer": { "const": "real_second_runtime" } }
+    },
+    {
+      "properties": { "case_id": { "enum": ["PACKAGE01"] }, "layer": { "const": "package_smoke" } }
+    },
+    {
+      "properties": {
+        "case_id": { "enum": ["stage:core_verified", "stage:flagship_live_verified", "stage:release_ready"] },
+        "layer": { "const": "review" }
+      }
+    },
+    {
+      "properties": {
+        "case_id": { "enum": ["offline:typecheck", "offline:lint", "offline:test", "offline:test:contracts", "offline:test:integration", "offline:test:faults", "offline:test:security", "offline:test:boundary", "offline:test:e2e:mock", "offline:build", "offline:package:smoke"] },
+        "layer": { "const": "offline_command" }
+      }
+    },
+    {
+      "properties": {
+        "case_id": { "enum": ["release:license_review", "release:secret_scan", "release:safety_defects", "release:capability_report", "release:model_loading"] },
+        "layer": { "const": "review" }
+      }
+    }
+  ],
+  "allOf": [
+    {
+      "if": {
+        "required": ["status", "case_id", "layer"],
+        "properties": {
+          "status": { "const": "passed" },
+          "case_id": { "enum": ["PACKAGE01", "offline:package:smoke", "AC14"] },
+          "layer": { "enum": ["package_smoke", "offline_command"] }
+        }
+      },
+      "then": { "required": ["package_artifact", "package_smoke_output_ref"] }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "passed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source_commit": {
+            "type": "string",
+            "minLength": 7
+          },
+          "started_at": {
+            "type": "string"
+          },
+          "finished_at": {
+            "type": "string"
+          },
+          "evidence_refs": {
+            "minItems": 1
+          },
+          "observations": {
+            "minItems": 1
+          },
+          "blockers": {
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "layer": {
+            "const": "live_human"
+          },
+          "status": {
+            "const": "passed"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "actual_human_performed"
+        ],
+        "properties": {
+          "actual_human_performed": {
+            "const": true
+          }
+        }
+      }
+    }
+  ]
+}

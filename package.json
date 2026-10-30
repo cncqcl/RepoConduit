@@ -1,0 +1,76 @@
+{
+  "name": "repo-conduit",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "rcac": "dist/src/cli/main.js"
+  },
+  "files": [
+    "npm-shrinkwrap.json",
+    "dist/src",
+    "dist/contracts",
+    "README.md",
+    "START_HERE.md",
+    "contracts",
+    "skills/consult-external-agent",
+    "tools/prepare-wsl-private-home.sh",
+    "tools/archive-live-bundle.mjs",
+    "tools/chatgpt-download-dom-observer.mjs",
+    "LICENSE",
+    "docs/user-guide",
+    "docs/operations.md",
+    "docs/personal-use.md",
+    "docs/known-limitations.md",
+    "docs/release-evidence.md",
+    "docs/SECURITY_AND_DEPLOYMENT.md",
+    "docs/MAINTENANCE_LIFECYCLE.md",
+    "docs/host-conversation.md",
+    "docs/DEPENDENCIES_AND_LICENSES.md",
+    "docs/THIRD_PARTY_NOTICES.md",
+    "docs/PRODUCTION_LICENSE_INVENTORY.json",
+    "docs/licenses"
+  ],
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests",
+    "test": "tsx --test --test-concurrency=2 tests/**/*.test.ts",
+    "test:contracts": "tsx --test tests/contracts/*.test.ts",
+    "test:integration": "tsx --test --test-concurrency=2 tests/integration/*.test.ts",
+    "test:faults": "tsx --test tests/faults/*.test.ts",
+    "test:security": "tsx --test tests/security/*.test.ts",
+    "test:boundary": "tsx --test tests/boundary/*.test.ts",
+    "test:e2e:mock": "tsx --test tests/e2e/*.mock.test.ts",
+    "test:e2e:live": "tsx --test tests/e2e/*.live.test.ts",
+    "build": "tsc",
+    "build:windows-helper": "node tools/build-windows-job-helper.mjs",
+    "test:windows-helper:installed": "node tools/windows-job-installed-smoke.mjs",
+    "package:smoke": "node tools/prepare-installation-package.mjs --check && npm run build && node tools/package-smoke.mjs",
+    "package:managed-smoke": "npm run build && node tools/managed-init-smoke.mjs",
+    "package:upgrade-preflight-smoke": "npm run build && node tools/installation-package-preflight-smoke.mjs",
+    "verify:release": "node tools/verify-release.mjs",
+    "check:public-source": "node tools/check-public-source.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.19.0",
+    "@types/oidc-provider": "9.12.1",
+    "eslint": "10.11.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.1.0",
+    "@modelcontextprotocol/server": "2.1.0",
+    "jose": "6.2.12",
+    "oidc-provider": "9.12.2",
+    "semver": "7.8.5",
+    "zod": "4.2.0"
+  },
+  "description": "Local repository collaboration with external agents, frozen evidence and versioned deliverables."
+}

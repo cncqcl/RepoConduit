@@ -1,0 +1,7 @@
+{
+  "filesystem": {
+    "denyRead": [
+      "/mnt"
+    ]
+  }
+}

@@ -1,0 +1,528 @@
+{
+  "schema_version": "0.2",
+  "status": "normative_target_contract_not_implemented_api",
+  "operations": [
+    {
+      "name": "collab.open",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "collab.create",
+      "idempotency_required": true,
+      "summary": "在预授权workspace中创建议题；不注册根目录"
+    },
+    {
+      "name": "collab.get",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "collab.read",
+      "idempotency_required": false,
+      "summary": "读取获准协作"
+    },
+    {
+      "name": "collab.list",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "collab.read",
+      "idempotency_required": false,
+      "summary": "只返回该主体获准对象"
+    },
+    {
+      "name": "context.read",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "context.read",
+      "idempotency_required": false,
+      "summary": "读取当前上下文、指定不可变版本或获准提议；版本读取始终绑定工作区与议题"
+    },
+    {
+      "name": "context.propose",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "context.propose",
+      "idempotency_required": true,
+      "summary": "提出增量观点，不直接更改正式约束"
+    },
+    {
+      "name": "context.accept",
+      "surfaces": [
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "context.accept",
+      "idempotency_required": true,
+      "summary": "本地采纳提议形成新版本"
+    },
+    {
+      "name": "snapshot.capture",
+      "surfaces": [
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "snapshot.create",
+      "idempotency_required": true,
+      "summary": "本地从明确working copy采集有一致性等级的快照"
+    },
+    {
+      "name": "repo.inspect",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "data.read",
+      "idempotency_required": false,
+      "summary": "读取范围/基线/完整性概览"
+    },
+    {
+      "name": "repo.list",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "data.read",
+      "idempotency_required": false,
+      "summary": "有界路径清单及同基线cursor"
+    },
+    {
+      "name": "repo.read",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "data.read",
+      "idempotency_required": false,
+      "summary": "源内容/行号/hash/截断与cursor"
+    },
+    {
+      "name": "repo.search",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "data.read",
+      "idempotency_required": false,
+      "summary": "定向检索与覆盖、排除信息"
+    },
+    {
+      "name": "repo.status",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "data.read",
+      "idempotency_required": false,
+      "summary": "当前或快照Git状态，不能混用"
+    },
+    {
+      "name": "repo.diff",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "data.read",
+      "idempotency_required": false,
+      "summary": "固定比较对象的差异"
+    },
+    {
+      "name": "investigate.submit",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "agent_job",
+      "required_grant": "investigation.request",
+      "idempotency_required": true,
+      "summary": "创建有预算的受限调查，不接受任意命令"
+    },
+    {
+      "name": "investigate.get",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "investigation.read",
+      "idempotency_required": false,
+      "summary": "调查与attempt的可披露状态"
+    },
+    {
+      "name": "investigate.result",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "investigation.read",
+      "idempotency_required": false,
+      "summary": "证据结果，披露前再鉴权"
+    },
+    {
+      "name": "investigate.cancel",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "job_control",
+      "required_grant": "investigation.cancel",
+      "idempotency_required": true,
+      "summary": "请求取消，不预报已终止"
+    },
+    {
+      "name": "artifact.begin",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "artifact_write",
+      "required_grant": "artifact.submit",
+      "idempotency_required": true,
+      "summary": "创建受限staging交付"
+    },
+    {
+      "name": "artifact.put_text",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "artifact_write",
+      "required_grant": "artifact.submit",
+      "idempotency_required": true,
+      "summary": "文本流写入该bundle限定路径"
+    },
+    {
+      "name": "artifact.import_reference",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "artifact_transfer",
+      "required_grant": "artifact.submit",
+      "idempotency_required": true,
+      "summary": "受支持provider引用下载到staging"
+    },
+    {
+      "name": "artifact.status",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "artifact.read",
+      "idempotency_required": false,
+      "summary": "逐文件状态和缺失项"
+    },
+    {
+      "name": "artifact.list",
+      "surfaces": ["local_host", "local_cli"],
+      "effect": "read",
+      "required_grant": "artifact.read",
+      "idempotency_required": false,
+      "summary": "按显式协作范围分页列出已发布成果；完整性为记录值，非实时复核"
+    },
+    {
+      "name": "artifact.inspect",
+      "surfaces": ["local_host", "local_cli"],
+      "effect": "read",
+      "required_grant": "artifact.read",
+      "idempotency_required": false,
+      "summary": "检查已发布成果的清单、版本和完整性"
+    },
+    {
+      "name": "artifact.finalize",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "artifact_write",
+      "required_grant": "artifact.submit",
+      "idempotency_required": true,
+      "summary": "封存检查并不可变发布"
+    },
+    {
+      "name": "artifact.abort",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "artifact_write",
+      "required_grant": "artifact.submit",
+      "idempotency_required": true,
+      "summary": "中止未发布staging，不删除已发布版本"
+    },
+    {
+      "name": "artifact.collect_local",
+      "surfaces": [
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "artifact_transfer",
+      "required_grant": "artifact.collect",
+      "idempotency_required": true,
+      "summary": "可信本地选择源，进入同一staging核心"
+    },
+    {
+      "name": "artifact.collect_browser",
+      "surfaces": ["local_host", "local_cli"],
+      "effect": "artifact_transfer",
+      "required_grant": "artifact.collect",
+      "idempotency_required": true,
+      "summary": "本地可信host从明确网页附件收取接收方已知的精确字节，未知下载只对账不重发"
+    },
+    {
+      "name": "artifact.export",
+      "surfaces": [
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "local_export",
+      "required_grant": "artifact.export",
+      "idempotency_required": true,
+      "summary": "本地显式导出/晋升并检查目标冲突"
+    },
+    {
+      "name": "conversation.bind",
+      "surfaces": [
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "conversation.control",
+      "idempotency_required": true,
+      "summary": "绑定已核实的原生会话"
+    },
+    {
+      "name": "conversation.send",
+      "surfaces": [
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "external_send",
+      "required_grant": "conversation.control",
+      "idempotency_required": true,
+      "summary": "当前binding发送，前后核对epoch/history"
+    },
+    {
+      "name": "conversation.sync",
+      "surfaces": [
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "conversation.control",
+      "idempotency_required": true,
+      "summary": "读取外部增量并写入本地消息/附件索引；按原生消息版本去重，不虚构缺失历史"
+    },
+    {
+      "name": "conversation.handoff",
+      "surfaces": [
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "conversation.control",
+      "idempotency_required": true,
+      "summary": "显式人工接管，停止受管理发送"
+    },
+    {
+      "name": "conversation.successor",
+      "surfaces": ["local_host", "local_cli"],
+      "effect": "state_write",
+      "required_grant": "conversation.control",
+      "idempotency_required": true,
+      "summary": "以可信观测的新原生会话替换当前binding，旧会话及证据保留为superseded"
+    },
+    {
+      "name": "conversation.resume",
+      "surfaces": [
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "conversation.control",
+      "idempotency_required": true,
+      "summary": "同步核对后恢复；本地可显式接受完整历史并保留原unknown发送结果，不抢占人工编辑"
+    },
+    {
+      "name": "decision.propose",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "decision.propose",
+      "idempotency_required": true,
+      "summary": "外部也可提出采纳建议但无批准权"
+    },
+    {
+      "name": "decision.get",
+      "surfaces": ["local_host", "local_cli"],
+      "effect": "read",
+      "required_grant": "context.read",
+      "idempotency_required": false,
+      "summary": "按明确工作区与议题读取完整本地决策"
+    },
+    {
+      "name": "decision.list",
+      "surfaces": ["local_host", "local_cli"],
+      "effect": "read",
+      "required_grant": "context.read",
+      "idempotency_required": false,
+      "summary": "按明确工作区与议题有界列出本地决策摘要"
+    },
+    {
+      "name": "decision.review",
+      "surfaces": ["local_host", "local_cli"],
+      "effect": "state_write",
+      "required_grant": "decision.record",
+      "idempotency_required": true,
+      "summary": "对已发布成果和当前固定快照生成不可变差异复核"
+    },
+    {
+      "name": "decision.record",
+      "surfaces": [
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "decision.record",
+      "idempotency_required": true,
+      "summary": "对具体版本记录本地采纳，不授权实施"
+    },
+    {
+      "name": "admin.register_workspace",
+      "surfaces": [
+        "local_admin"
+      ],
+      "effect": "admin_write",
+      "required_grant": "admin.workspace",
+      "idempotency_required": true,
+      "summary": "验证根目录及边界"
+    },
+    {
+      "name": "admin.register_working_copy",
+      "surfaces": ["local_admin"],
+      "effect": "admin_write",
+      "required_grant": "admin.workspace",
+      "idempotency_required": true,
+      "summary": "将明确本地目录注册为指定 workspace 的工作副本"
+    },
+    {
+      "name": "admin.grant",
+      "surfaces": [
+        "local_admin"
+      ],
+      "effect": "admin_write",
+      "required_grant": "admin.grant",
+      "idempotency_required": true,
+      "summary": "可信本地授权，预算和披露明确"
+    },
+    {
+      "name": "admin.revoke",
+      "surfaces": [
+        "local_admin"
+      ],
+      "effect": "admin_write",
+      "required_grant": "admin.grant",
+      "idempotency_required": true,
+      "summary": "撤销并递增权限epoch"
+    },
+    {
+      "name": "admin.replace_project_share",
+      "surfaces": [
+        "local_admin"
+      ],
+      "effect": "admin_write",
+      "required_grant": "admin.grant",
+      "idempotency_required": true,
+      "summary": "可信本地显式替换单项目双方日常数据披露范围"
+    },
+    {
+      "name": "admin.configure_profile",
+      "surfaces": [
+        "local_admin"
+      ],
+      "effect": "admin_write",
+      "required_grant": "admin.profile",
+      "idempotency_required": true,
+      "summary": "设置执行/网络/模型和预算，外部不可调用"
+    },
+    {
+      "name": "collab.open_from_template",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "state_write",
+      "required_grant": "collab.create",
+      "idempotency_required": true,
+      "summary": "从明确接收方已授权的冻结项目材料原子建题；不捕获live源码或接受外部问题"
+    },
+    {
+      "name": "admin.publish_project_material",
+      "surfaces": [
+        "local_admin"
+      ],
+      "effect": "admin_write",
+      "required_grant": "admin.workspace",
+      "idempotency_required": true,
+      "summary": "本地发布固定项目材料供已授权接收方建题，不扩大原数据范围"
+    },
+    {
+      "name": "repo.read_original",
+      "surfaces": [
+        "external_mcp",
+        "local_host",
+        "local_cli"
+      ],
+      "effect": "read",
+      "required_grant": "data.read",
+      "idempotency_required": false,
+      "summary": "从准确绑定的冻结快照读取原始文件字节；程序编码，不生成或改写文件"
+    }
+  ]
+}

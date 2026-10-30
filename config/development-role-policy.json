@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2",
+  "purpose": "development_handoff_only_not_product_runtime_policy",
+  "verified_documentation_date": "2026-10-27",
+  "primary": {
+    "model": "gpt-6-astra",
+    "model_reasoning_effort": "medium"
+  },
+  "default_subagent": {
+    "model": "gpt-6.1-sol",
+    "model_reasoning_effort": "medium"
+  },
+  "max_concurrent_threads_per_session": 3,
+  "roles": [
+    {
+      "name": "rcac_architect",
+      "model": "gpt-6-astra",
+      "model_reasoning_effort": "high",
+      "sandbox_mode": "read-only",
+      "config_file": ".codex/agents/rcac_architect.toml"
+    },
+    {
+      "name": "rcac_explorer",
+      "model": "gpt-6.1-sol",
+      "model_reasoning_effort": "high",
+      "sandbox_mode": "read-only",
+      "config_file": ".codex/agents/rcac_explorer.toml"
+    },
+    {
+      "name": "rcac_implementer",
+      "model": "gpt-6.1-sol",
+      "model_reasoning_effort": "medium",
+      "sandbox_mode": "workspace-write",
+      "config_file": ".codex/agents/rcac_implementer.toml"
+    },
+    {
+      "name": "rcac_reviewer",
+      "model": "gpt-6-astra",
+      "model_reasoning_effort": "high",
+      "sandbox_mode": "read-only",
+      "config_file": ".codex/agents/rcac_reviewer.toml"
+    },
+    {
+      "name": "rcac_verifier",
+      "model": "gpt-6.1-sol",
+      "model_reasoning_effort": "high",
+      "sandbox_mode": "workspace-write",
+      "config_file": ".codex/agents/rcac_verifier.toml"
+    },
+    {
+      "name": "rcac_docs",
+      "model": "gpt-6.1-terra",
+      "model_reasoning_effort": "high",
+      "sandbox_mode": "workspace-write",
+      "config_file": ".codex/agents/rcac_docs.toml"
+    },
+    {
+      "name": "rcac_visual",
+      "model": "gpt-6.1-terra",
+      "model_reasoning_effort": "high",
+      "config_file": ".codex/agents/rcac_visual.toml"
+    },
+    {
+      "name": "rcac_deep_reviewer",
+      "model": "gpt-6-astra",
+      "model_reasoning_effort": "xhigh",
+      "sandbox_mode": "read-only",
+      "config_file": ".codex/agents/rcac_deep_reviewer.toml"
+    }
+  ],
+  "activation": "project_trust_and_client_schema_and_model_access_must_be_verified",
+  "escalation": "explicit_role_selection; custom_agent_file_values_take_precedence",
+  "automatic_provider_or_account_fallback": false
+}

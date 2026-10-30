@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.png -text
+*.jpg -text
+*.zip -text
+*.tgz -text
+*.exe -text
+*.bin -text
+# Runtime fixtures contain byte-bound embedded programs.
+tests/fixtures/legacy-runtime/** -text whitespace=cr-at-eol
+tests/fixtures/legacy-runtime/**/*.md text eol=lf
+tests/fixtures/legacy-runtime/**/*.py text eol=lf
+tools/prepare-wsl-private-home.sh text eol=lf

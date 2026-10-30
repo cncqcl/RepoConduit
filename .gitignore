@@ -1,0 +1,33 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+.local/
+.reference-checkouts/
+artifacts/
+# Local execution evidence is private; only schemas and public templates are source.
+verification/probes/
+verification/receipts/
+verification/logs/
+verification/live/
+work/private/
+# Installation databases, credentials and user exports must stay outside source.
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pem
+*.key
+*.tgz
+*.exe
+/stdout
+/%SystemDrive%/
+/rcac-personal-*/

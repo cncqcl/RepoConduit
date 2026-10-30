@@ -1,0 +1,416 @@
+{
+  "schema_version": "0.2",
+  "status": "requirements_not_test_results",
+  "source": "DESIGN.md section 14; original AC01-AC14 preserved",
+  "scenarios": [
+    {
+      "id": "AC01",
+      "title": "本地发起、多轮查证与人类参与",
+      "goal_ids": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05"
+      ],
+      "task_ids": [
+        "T00.2",
+        "T01.1",
+        "T03.2",
+        "T04.1",
+        "T04.2",
+        "T04.3",
+        "T06.1",
+        "T08.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "mock_e2e",
+        "live"
+      ],
+      "live_runbooks": [
+        "LIVE01"
+      ],
+      "when": "本地host在S1发起咨询，外部读取三个模块，至少两次递进调查，用户在本地追加约束。",
+      "expected": "同一collaboration/context lineage；每条证据有基线和位置；不修改源码，不自动实施。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC02",
+      "title": "网页接管、宿主结束回合、之后恢复",
+      "goal_ids": [
+        "G02",
+        "G09"
+      ],
+      "task_ids": [
+        "T00.2",
+        "T03.1",
+        "T03.3",
+        "T04.3",
+        "T06.1",
+        "T08.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "integration",
+        "mock_e2e",
+        "live_human"
+      ],
+      "live_runbooks": [
+        "LIVE01"
+      ],
+      "when": "人接管网页并追加至少三轮讨论；主host回合结束；稍后回到host同步并追问。",
+      "expected": "Managed Investigator仍服务；自动发送暂停；真实人工操作及新增消息被观测，恢复不重复发送。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC03",
+      "title": "外部独立发起",
+      "goal_ids": [
+        "G02",
+        "G03",
+        "G07",
+        "G08"
+      ],
+      "task_ids": [
+        "T00.2",
+        "T01.1",
+        "T03.1",
+        "T05.1",
+        "T06.1",
+        "T08.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "mock_e2e",
+        "live"
+      ],
+      "live_runbooks": [
+        "LIVE02"
+      ],
+      "when": "只有预授权项目入口，无当前host thread；人在外部新建议题并提交多文件成果。",
+      "expected": "不伪造host会话；独立创建协作并正确关联成果；不启动开发任务。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC04",
+      "title": "同项目多咨询、不同项目并发",
+      "goal_ids": [
+        "G06"
+      ],
+      "task_ids": [
+        "T01.1",
+        "T01.2",
+        "T01.3",
+        "T03.1",
+        "T03.3",
+        "T04.1",
+        "T07.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "faults",
+        "live"
+      ],
+      "live_runbooks": [
+        "LIVE03"
+      ],
+      "when": "项目A的两个议题与B的一个议题并发，故意提交越界对象ID和过期sender epoch。",
+      "expected": "身份/会话/证据/文件不串线；拒绝越权和旧epoch；同一binding单一自动sender。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC05",
+      "title": "基线变更与证据过时",
+      "goal_ids": [
+        "G05",
+        "G08"
+      ],
+      "task_ids": [
+        "T02.1",
+        "T05.3",
+        "T07.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "faults",
+        "live"
+      ],
+      "live_runbooks": [
+        "LIVE01"
+      ],
+      "when": "讨论使用S1，本地形成S2，再审查基于S1的成果。",
+      "expected": "旧证据保持S1；显示相关差异；正式采纳前复核；固定快照不混入live内容。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC06",
+      "title": "大文件、分页和不完整检索",
+      "goal_ids": [
+        "G03",
+        "G05"
+      ],
+      "task_ids": [
+        "T02.2",
+        "T07.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "security"
+      ],
+      "live_runbooks": [],
+      "when": "关键实现位于下一页；另有超长单行、过滤目录和部分语义索引。",
+      "expected": "返回字节/行上限及同版本continuation；补读可找到实现；不作无范围的不存在断言。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC07",
+      "title": "完整多文件bundle与版本更新",
+      "goal_ids": [
+        "G07"
+      ],
+      "task_ids": [
+        "T00.2",
+        "T05.1",
+        "T05.2",
+        "T05.3",
+        "T08.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "faults",
+        "live"
+      ],
+      "live_runbooks": [
+        "LIVE01",
+        "LIVE02"
+      ],
+      "when": "交付Markdown/HTML/JSON/图片及ZIP/子目录，继续讨论再交付v2。",
+      "expected": "文件集和原始字节可验证；发布回执匹配清单；v1不可覆盖；语义审查独立。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC08",
+      "title": "交付中断与恶意内容",
+      "goal_ids": [
+        "G07",
+        "G09"
+      ],
+      "task_ids": [
+        "T05.1",
+        "T05.2",
+        "T05.3",
+        "T07.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "security",
+        "faults"
+      ],
+      "live_runbooks": [],
+      "when": "失效引用、重复提交、ZipSlip、大小写冲突、解压超额、脚本/AGENTS等测试。",
+      "expected": "半包不发布；危险内容拒绝或隔离；不自动加载规则、运行脚本或应用patch。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC09",
+      "title": "调查注入与权限升级",
+      "goal_ids": [
+        "G04",
+        "G08"
+      ],
+      "task_ids": [
+        "T01.2",
+        "T02.1",
+        "T04.1",
+        "T04.2",
+        "T07.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "security",
+        "live_runtime"
+      ],
+      "live_runbooks": [
+        "LIVE03"
+      ],
+      "when": "在合成仓中请求越权读取/源码修改/网络安装/递归委托；使用无敏感性的canary。",
+      "expected": "执行层阻止行为；不披露canary；声明隔离的实际runtime必须有负向实测。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC10",
+      "title": "未知发送、worker崩溃与取消",
+      "goal_ids": [
+        "G09"
+      ],
+      "task_ids": [
+        "T01.3",
+        "T03.2",
+        "T04.1",
+        "T04.3",
+        "T07.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "faults",
+        "live_runtime"
+      ],
+      "live_runbooks": [
+        "LIVE03"
+      ],
+      "when": "模拟发送后断线、worker进程丢失和取消无终止回执；核对原生任务后恢复。",
+      "expected": "保留reconcile/recovery状态；不重复发送/启动；不以cancel_requested冒充cancelled。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC11",
+      "title": "替换agent／协议而不修改核心",
+      "goal_ids": [
+        "G01",
+        "G10"
+      ],
+      "task_ids": [
+        "T00.1",
+        "T01.1",
+        "T07.2",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "boundary",
+        "real_second_runtime"
+      ],
+      "live_runbooks": [
+        "NEUTRAL01"
+      ],
+      "when": "相同调查合约使用第二种真实local runtime；外部使用不同语义测试/API适配器。",
+      "expected": "Workspace/Collaboration/Grant/Evidence/Bundle类型不改；测试替身不冒充真实兼容。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC12",
+      "title": "能力撤销、平台受限与数据再披露",
+      "goal_ids": [
+        "G08",
+        "G09",
+        "G10"
+      ],
+      "task_ids": [
+        "T00.1",
+        "T00.2",
+        "T01.2",
+        "T03.2",
+        "T05.2",
+        "T06.2",
+        "T07.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "security",
+        "live"
+      ],
+      "live_runbooks": [
+        "LIVE02",
+        "LIVE03"
+      ],
+      "when": "账号能力变化、grant过期/撤销、A向B再披露、原生写工具不可用。",
+      "expected": "拒绝未授权请求；实际route明确；不伪装readOnly、不换账号，不把manual写成自动。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC13",
+      "title": "上下文换聊与本地成果决策",
+      "goal_ids": [
+        "G02",
+        "G05",
+        "G08"
+      ],
+      "task_ids": [
+        "T03.1",
+        "T03.3",
+        "T05.3",
+        "T08.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "mock_e2e",
+        "live"
+      ],
+      "live_runbooks": [
+        "LIVE01"
+      ],
+      "when": "换绑新聊天，外部提议与已否决方向冲突，本地审查bundle。",
+      "expected": "保留原目标和否决理由；证据可重读；决策有本地主体；成果到达不授权源码执行。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    },
+    {
+      "id": "AC14",
+      "title": "服务重启与文件／数据库发布一致性",
+      "goal_ids": [
+        "G07",
+        "G09"
+      ],
+      "task_ids": [
+        "T01.3",
+        "T05.3",
+        "T06.2",
+        "T07.1",
+        "T08.2"
+      ],
+      "required_layers": [
+        "contracts",
+        "integration",
+        "faults",
+        "package_smoke"
+      ],
+      "live_runbooks": [],
+      "when": "在暂存、校验、内容落盘、DB发布前后分别崩溃并重启。",
+      "expected": "published清单无缺失对象；不重复发布；未发布可恢复/清理；引用数据不被GC。",
+      "initial_status": "not_run",
+      "evidence_refs": []
+    }
+  ],
+  "rules": [
+    "offline and live outcomes are distinct",
+    "not_run/blocked/skipped are never passed",
+    "human handoff needs an actual person",
+    "manual collection is not automatic direct submission",
+    "second runtime requires a real different local runtime, not a second model of the same runtime"
+  ]
+}

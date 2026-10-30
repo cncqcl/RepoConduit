@@ -1,0 +1,27 @@
+{
+  "schema_version": "public-maintenance-summary-v1",
+  "status": "in_progress",
+  "scope": "public_source_preparation_2026-10-30",
+  "full_product_release_ready": false,
+  "changes": [
+    "MIT owner decision",
+    "User guide tracked as Markdown and offline HTML",
+    "Private raw evidence retained outside public source",
+    "Synthetic test fixtures replace personal runtime records"
+  ],
+  "verification": {
+    "selected_cases": 559,
+    "passed": 558,
+    "skipped": 1,
+    "failed": 0,
+    "full_suite": "not_run_for_this_cleanup",
+    "live": "not_run",
+    "package_smoke": "passed_scoped_candidate"
+  },
+  "next_action": "Use only the clean-history public branch or its dedicated bundle for source publication. Remote publishing requires a new explicit request.",
+  "current_task": {
+    "name": "public_source_preparation_2026-10-30",
+    "status": "source_tree_prepared",
+    "verification_summary": "verification/SOURCE_PREPARATION.md"
+  }
+}
