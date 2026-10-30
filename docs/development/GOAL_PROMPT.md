@@ -1,12 +1,12 @@
 # 开发任务入口
 
-先读取 [AGENTS.md](AGENTS.md)、[产品设计](DESIGN.md)、
-[架构与接口](docs/ARCHITECTURE_AND_CONTRACTS.md)、
-[当前维护计划](docs/IMPLEMENTATION_PLAN.md) 和
-[验收规则](docs/ACCEPTANCE_AND_LIVE_RUNBOOK.md)。
+先读取 [AGENTS.md](../../AGENTS.md)、[产品设计](../DESIGN.md)、
+[架构与接口](../ARCHITECTURE_AND_CONTRACTS.md)、
+[当前维护计划](../IMPLEMENTATION_PLAN.md) 和
+[验收规则](../ACCEPTANCE_AND_LIVE_RUNBOOK.md)。
 
 以用户当前明确任务为范围，核查真实源码、工作区改动及受影响测试。
-`work/GOAL_STATE.json` 是公开工程状态摘要，不是宿主 Goal 配置，
+`.codex/GOAL_STATE.json` 是公开工程状态摘要，不是宿主 Goal 配置，
 不触发后台工作，也不承接历史用户的机器、账号或研究授权。
 
 实现、测试、真实集成和正式发布分别判断。维护用户数据与历史失败；

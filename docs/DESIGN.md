@@ -3,9 +3,9 @@
 
 **状态：持续维护的完整设计规范；产品已有实现。** 本文从 2026-09-26 的 v0.2 设计基线演进，保留 G01–G10、N01–N10 与 AC01–AC14。当前已有 CLI、日常 MCP、应用核心、版本化成果和恢复实现，不再是仅含校验脚本的交接包。规范描述完整目标；功能是否可用仍以当前源码、所选安装和对应回执为准，不由规范文字授予能力或提升验收状态。
 
-**公开源码状态：**已有实现和分版本的组件验证；完整统一版本 LIVE 与 `release_ready` 尚未通过。历史实机日志、截图和安装包保留在仓外私有归档。参见[证据范围](docs/release-evidence.md)与[使用说明](docs/user-guide/README.md)。
+**公开源码状态：**已有实现和分版本的组件验证；完整统一版本 LIVE 与 `release_ready` 尚未通过。历史实机日志、截图和安装包保留在仓外私有归档。参见[证据范围](release-evidence.md)与[使用说明](user-guide/README.md)。
 
-**使用顺序：** [AGENTS.md](AGENTS.md) → 本文 → [架构与接口合约](docs/ARCHITECTURE_AND_CONTRACTS.md) → [实施计划](docs/IMPLEMENTATION_PLAN.md) → [验收与实机手册](docs/ACCEPTANCE_AND_LIVE_RUNBOOK.md)。Goal 执行入口见 [GOAL_PROMPT.md](GOAL_PROMPT.md)。
+**使用顺序：** [AGENTS.md](../AGENTS.md) → 本文 → [架构与接口合约](ARCHITECTURE_AND_CONTRACTS.md) → [实施计划](IMPLEMENTATION_PLAN.md) → [验收与实机手册](ACCEPTANCE_AND_LIVE_RUNBOOK.md)。Goal 执行入口见 [GOAL_PROMPT.md](development/GOAL_PROMPT.md)。
 
 **指令边界：** AGENTS.md 和 .codex 配置用于开发本项目，不能作为未来产品的 investigator 隔离策略。产品的只读调查权限必须在独立 runtime／OS 执行环境中落实。研发时自主实现这个框架，不等于框架运行后允许外部 agent 自主修改被协作仓库。
 
@@ -738,7 +738,7 @@ ChatGPT Project 是可选的 ExternalCollectionRef；并非所有 agent 都有�
 
 ### 19.1 实例与框架的分离
 
-开发主 agent 的 model/thinking 配置只在 AGENTS.md、.codex 和 config/development-role-policy.json。产品 core 不依赖这些设置；真实产品的 Local Investigator profile 在用户可信配置中单独授权。外部 agent 的职能可随议题变化，不能把“外部永远规划、本地永远只执行”写成领域不变量。
+开发主 agent 的 model/thinking 配置只在 AGENTS.md、.codex 和 .codex/development-role-policy.json。产品 core 不依赖这些设置；真实产品的 Local Investigator profile 在用户可信配置中单独授权。外部 agent 的职能可随议题变化，不能把“外部永远规划、本地永远只执行”写成领域不变量。
 
 ### 19.2 一个实际运行方式先做完整
 

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2",
   "status": "requirements_not_test_results",
-  "source": "DESIGN.md section 14; original AC01-AC14 preserved",
+  "source": "docs/DESIGN.md section 14; original AC01-AC14 preserved",
   "scenarios": [
     {
       "id": "AC01",

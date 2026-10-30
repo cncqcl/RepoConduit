@@ -2,7 +2,7 @@
 
 本页描述仓库内的研发角色配置，不构成产品 Local Investigator 的安全隔离证明。主会话配置和角色文件、当前客户端支持情况、账户模型可用性及会话覆盖共同决定实际运行设置；`AGENTS.md` 本身不会切换模型。
 
-当前项目角色映射以 [development-role-policy.json](../config/development-role-policy.json) 和 `.codex/agents/` 中 TOML 为准：主会话为 `gpt-6-astra` / `medium`；架构与独立评审为 Astra/high，定向探索与验证为 Sol 6.1/high，明确实现为 Sol 6.1/medium，文档及视觉任务为 Terra/high，难题升级角色为 Astra/xhigh。默认子代理遵循当前用户层设置。角色映射是项目策略，不是模型性能保证。
+当前项目角色映射以 [development-role-policy.json](../.codex/development-role-policy.json) 和 `.codex/agents/` 中 TOML 为准：主会话为 `gpt-6-astra` / `medium`；架构与独立评审为 Astra/high，定向探索与验证为 Sol 6.1/high，明确实现为 Sol 6.1/medium，文档及视觉任务为 Terra/high，难题升级角色为 Astra/xhigh。默认子代理遵循当前用户层设置。角色映射是项目策略，不是模型性能保证。
 
 `.codex/config.toml` 定义主会话和并发默认值；项目角色配置用于研发框架，不为外部调查授予权限。父会话的活动权限可能影响子代理，不能把角色配置中的只读声明当作已验证沙箱。
 

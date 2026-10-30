@@ -1,6 +1,6 @@
 # 实施与维护计划
 
-本计划保留产品阶段地图和后续维护边界。源码、[产品设计](../DESIGN.md)、[架构与合约](ARCHITECTURE_AND_CONTRACTS.md)以及[验收手册](ACCEPTANCE_AND_LIVE_RUNBOOK.md)是具体实现和验收依据。阶段名称不是当前源码自动通过的证明，实际结果见[验证状态](release-evidence.md)。
+本计划保留产品阶段地图和后续维护边界。源码、[产品设计](DESIGN.md)、[架构与合约](ARCHITECTURE_AND_CONTRACTS.md)以及[验收手册](ACCEPTANCE_AND_LIVE_RUNBOOK.md)是具体实现和验收依据。阶段名称不是当前源码自动通过的证明，实际结果见[验证状态](release-evidence.md)。
 
 | 阶段 | 工作范围 | 验证边界 |
 | --- | --- | --- |

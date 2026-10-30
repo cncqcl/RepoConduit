@@ -12,7 +12,7 @@
     "dist/src",
     "dist/contracts",
     "README.md",
-    "START_HERE.md",
+    "docs/getting-started.md",
     "contracts",
     "skills/consult-external-agent",
     "tools/prepare-wsl-private-home.sh",

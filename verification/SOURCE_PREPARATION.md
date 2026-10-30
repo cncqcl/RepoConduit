@@ -44,3 +44,27 @@ bundle/ZIP, never an all-refs push of the original repository.
 The public `RUNTIME_ACCEPTANCE.json` is deliberately a blocked/not-run template.
 Complete unified-version LIVE, human handoff, second-runtime and release
 evidence remain required by the unchanged acceptance rules.
+
+## Local root layout follow-up
+
+The physical checkout was subsequently organized as well: design and task
+documents moved under `docs/`, community documents under `.github/`, and
+development metadata under `.codex/`. Root-level Node configuration and both
+required lockfiles remain in place. Historical `.local` contents were moved
+outside the checkout: 215 directories and 127 loose files, preserving their
+contents without recursively scanning installations. The tool's existing
+Tunnel client dependency remains available in `.local/`.
+
+A running process holds the old root `stdout` log. It is ignored
+and retained until normal shutdown; the user-local launcher now selects an
+external runtime log directory for subsequent starts. No active connection was
+stopped. This follow-up changes paths, documentation and package file selection;
+it does not rebind the earlier test or package receipts to a new artifact.
+
+Follow-up validation: 151 indexed local document links passed; package smoke
+passed after the relocated quick-start was included in the package whitelist.
+The checked package SHA-256 was
+`b98c2fe753ed1b968e483266b411ebf1bdb5a26cc5f63f7196551f1ea736c404`.
+Launcher syntax and connect dry-run passed without a new connection or key input.
+The existing Tunnel process remained running. No source behavior or full-suite
+acceptance was changed by the directory cleanup.

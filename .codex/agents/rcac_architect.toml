@@ -5,7 +5,7 @@ model = "gpt-6-astra"
 model_reasoning_effort = "high"
 sandbox_mode = "read-only"
 developer_instructions = """
-遵守项目根 AGENTS.md 和当前任务的授权。先读 DESIGN.md 和接口合约。核查源码/协作/执行权限分离、跨项目隔离和统一 handler。追踪真实代码路径；提出最小兼容改动与可验证条件。不要写产品文件；由主 agent 整合结论。
+遵守项目根 AGENTS.md 和当前任务的授权。先读 docs/DESIGN.md 和接口合约。核查源码/协作/执行权限分离、跨项目隔离和统一 handler。追踪真实代码路径；提出最小兼容改动与可验证条件。不要写产品文件；由主 agent 整合结论。
 这些是研发子代理职责，不是产品 Local Investigator 的安全策略。父会话的活动权限覆盖可能影响子代理，执行前核实实际权限，不把 read-only 配置当作强隔离证明。
 不要递归委托，除非主 agent 明确授权。输出：结论、证据、涉及文件、验证记录、未知项和下一步。不能声称使用了未观测的模型或工具。
 """

@@ -1,8 +1,8 @@
 # Contributing
 
-Use Node.js 24.x and `npm ci`. Start with [the design](DESIGN.md),
-[architecture and contracts](docs/ARCHITECTURE_AND_CONTRACTS.md), and
-[development rules](AGENTS.md). Keep source changes separate from private
+Use Node.js 24.x and `npm ci`. Start with [the design](../docs/DESIGN.md),
+[architecture and contracts](../docs/ARCHITECTURE_AND_CONTRACTS.md), and
+[development rules](../AGENTS.md). Keep source changes separate from private
 installation state, credentials, raw chat transcripts, and execution logs.
 
 Run checks appropriate to the change: `npm run typecheck`, `npm run lint`,
@@ -24,4 +24,4 @@ bounded hygiene check, not a guarantee that no secret exists. Review newly
 added fixtures and binary files yourself. Preserve third-party notices.
 
 Source cleanup does not establish product release readiness. Follow
-[the acceptance runbook](docs/ACCEPTANCE_AND_LIVE_RUNBOOK.md) for a release.
+[the acceptance runbook](../docs/ACCEPTANCE_AND_LIVE_RUNBOOK.md) for a release.

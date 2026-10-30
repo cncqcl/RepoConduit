@@ -1,0 +1,45 @@
+{
+  "schema_version": "public-maintenance-summary-v1",
+  "status": "in_progress",
+  "scope": "public_source_preparation_2026-10-30",
+  "full_product_release_ready": false,
+  "changes": [
+    "MIT owner decision",
+    "User guide tracked as Markdown and offline HTML",
+    "Private raw evidence retained outside public source",
+    "Synthetic test fixtures replace personal runtime records"
+  ],
+  "verification": {
+    "selected_cases": 559,
+    "passed": 558,
+    "skipped": 1,
+    "failed": 0,
+    "full_suite": "not_run_for_this_cleanup",
+    "live": "not_run",
+    "package_smoke": "passed_scoped_candidate"
+  },
+  "next_action": "Use only the clean-history public branch or its dedicated bundle for source publication. Remote publishing requires a new explicit request.",
+  "current_task": {
+    "name": "physical_root_layout_cleanup_2026-10-30",
+    "status": "completed",
+    "verification_summary": "verification/SOURCE_PREPARATION.md"
+  },
+  "local_root_cleanup": {
+    "historical_directories_archived": 215,
+    "loose_files_archived": 127,
+    "retained_local_dependency": "tunnel-client-v0.0.15",
+    "root_log": "stdout remains held by a running process; ignored and preserved until normal shutdown",
+    "previous_verification_binding": "earlier test counts and package identity retained for their original candidate",
+    "verification": {
+      "indexed_blob_check": "passed",
+      "local_links_checked": 151,
+      "package_smoke": "passed",
+      "package_sha256": "b98c2fe753ed1b968e483266b411ebf1bdb5a26cc5f63f7196551f1ea736c404",
+      "launcher_parser": "passed",
+      "connect_dry_run": "passed_no_network",
+      "active_tunnel": "same existing process retained",
+      "source_code_changes": false,
+      "full_suite": "not_run_layout_only"
+    }
+  }
+}

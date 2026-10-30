@@ -9,6 +9,7 @@ RepoConduit 帮助个人开发者围绕本地 Git 项目与外部智能体协作
 - [用户使用说明](docs/user-guide/README.md)：常规流程、ChatGPT 网页中的讨论、课题与版本、关机恢复及常见问题。也可打开[离线 HTML 版](docs/user-guide/index.html)。
 - [安装、配置与恢复](docs/operations.md)：CLI、连接和数据管理。
 - [文档导航](docs/README.md)：开发设计、验收和其他说明。
+- [仓库目录说明](docs/development/repository-layout.md)：根目录工程文件、本地构建输出和私有归档的用途。
 
 源代码要求 Node.js 24.x。使用锁文件安装开发依赖后，可运行：
 
